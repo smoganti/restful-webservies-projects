@@ -1,4 +1,4 @@
-package com.resources.rest.webservices.restfulwebservicesproject1.com.socialnetwork.resources.exceptions;
+package com.resources.rest.webservices.socialnetwork.com.socialnetwork.resources.exceptions;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

@@ -1,8 +1,8 @@
-package com.resources.rest.webservices.restfulwebservicesproject1.com.socialnetwork.resources;
+package com.resources.rest.webservices.socialnetwork.com.socialnetwork.resources;
 
-import com.resources.rest.webservices.restfulwebservicesproject1.com.socialnetwork.resources.dao.UserDaoService;
-import com.resources.rest.webservices.restfulwebservicesproject1.com.socialnetwork.resources.exceptions.UserNotFoundException;
-import com.resources.rest.webservices.restfulwebservicesproject1.com.socialnetwork.resources.model.User;
+import com.resources.rest.webservices.socialnetwork.com.socialnetwork.resources.dao.UserDaoService;
+import com.resources.rest.webservices.socialnetwork.com.socialnetwork.resources.exceptions.UserNotFoundException;
+import com.resources.rest.webservices.socialnetwork.com.socialnetwork.resources.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -16,29 +16,29 @@ import java.util.concurrent.ConcurrentHashMap;
 public class UserController {
 
     @Autowired
-    private UserDaoService Userservice;
+    private UserDaoService userDaoService;
 
     //retrieve all users
     @GetMapping(path = "/user/getUsers")
     public ConcurrentHashMap<Integer, User> retrieveAllUsers() {
-        return Userservice.getAll();
+        return userDaoService.getAll();
     }
 
     //retrieve a user
     @GetMapping(path = "/user/{id}")
     public User getUser(@PathVariable int id) {
-        User user = Userservice.findOne(id);
+        User user = userDaoService.findOne(id);
 
         if(user == null)
             throw new UserNotFoundException("id : "+id);
         return user;
     }
 
-    @PostMapping(path = "/getUsers")
+    @PostMapping(path = "/user/getUsers")
     public ResponseEntity<User> saveUserList(@RequestBody ConcurrentHashMap<Integer,User> userMap) {
 
         for(Map.Entry<Integer,User> entry : userMap.entrySet()){
-            Userservice.save(entry.getValue());
+            userDaoService.save(entry.getValue());
         }
 
         URI location = ServletUriComponentsBuilder
@@ -52,7 +52,7 @@ public class UserController {
     @PostMapping(path = "/user")
     public ResponseEntity<User> saveUser(@RequestBody User user) {
 
-        User savedUser = Userservice.save(user);
+        User savedUser = userDaoService.save(user);
         if (savedUser == null) {
             throw new UserNotFoundException("Not Found");
         }

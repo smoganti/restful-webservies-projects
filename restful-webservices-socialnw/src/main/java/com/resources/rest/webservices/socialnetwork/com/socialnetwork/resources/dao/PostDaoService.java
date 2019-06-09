@@ -1,13 +1,13 @@
-package com.resources.rest.webservices.restfulwebservicesproject1.com.socialnetwork.resources.dao;
+package com.resources.rest.webservices.socialnetwork.com.socialnetwork.resources.dao;
 
-import com.resources.rest.webservices.restfulwebservicesproject1.com.socialnetwork.resources.model.Post;
+import com.resources.rest.webservices.socialnetwork.com.socialnetwork.resources.model.Post;
 import org.springframework.stereotype.Component;
 
 import java.util.concurrent.ConcurrentHashMap;
 
 @Component
 public class PostDaoService {
-    private static ConcurrentHashMap<Integer, Post> postMap;
+    private static ConcurrentHashMap<Integer, Post> postMap = new ConcurrentHashMap<>();
     private static Integer postCount = 3;
 
     static{
