@@ -1,4 +1,4 @@
-package com.resources.rest.webservices.restfulwebservicesproject1.com.exception;
+package com.resources.rest.webservices.socialnetwork.com.exception;
 
 import java.util.Date;
 

@@ -1,8 +1,8 @@
-package com.resources.rest.webservices.restfulwebservicesproject1.com.socialnetwork.resources;
+package com.resources.rest.webservices.socialnetwork.com.socialnetwork.resources;
 
-import com.resources.rest.webservices.restfulwebservicesproject1.com.socialnetwork.resources.dao.PostDaoService;
-import com.resources.rest.webservices.restfulwebservicesproject1.com.socialnetwork.resources.exceptions.PostNotFoundException;
-import com.resources.rest.webservices.restfulwebservicesproject1.com.socialnetwork.resources.model.Post;
+import com.resources.rest.webservices.socialnetwork.com.socialnetwork.resources.dao.PostDaoService;
+import com.resources.rest.webservices.socialnetwork.com.socialnetwork.resources.exceptions.PostNotFoundException;
+import com.resources.rest.webservices.socialnetwork.com.socialnetwork.resources.model.Post;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -16,22 +16,22 @@ import java.util.concurrent.ConcurrentHashMap;
 public class PostController {
 
     @Autowired
-    private PostDaoService postService;
+    private PostDaoService postDaoService;
 
     @GetMapping(path = "/post/getPosts")
     public ConcurrentHashMap<Integer, Post> retrieveAllPosts(){
-        return postService.getAll();
+        return postDaoService.getAll();
     }
 
     @GetMapping(path = "/post/{id}")
     public Post getPost(@PathVariable Integer id){
-        return postService.findOne(id);
+        return postDaoService.findOne(id);
     }
 
     @PostMapping(path = "/post/getPosts")
     public ResponseEntity<Object> saveAllPosts(@RequestBody ConcurrentHashMap<Integer,Post> postMap){
         for(Map.Entry<Integer,Post> entry:postMap.entrySet()){
-            postService.save(entry.getValue());
+            postDaoService.save(entry.getValue());
 
         }
 
@@ -45,7 +45,7 @@ public class PostController {
 
     @PostMapping(value = "/post")
     public ResponseEntity<Post> savePost(@RequestBody Post post){
-        Post savedPost = postService.save(post);
+        Post savedPost = postDaoService.save(post);
 
         if(savedPost == null){
             throw new PostNotFoundException("Post Not Found");

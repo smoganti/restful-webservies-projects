@@ -1,6 +1,6 @@
-package com.resources.rest.webservices.restfulwebservicesproject1.com.socialnetwork.resources.dao;
+package com.resources.rest.webservices.socialnetwork.com.socialnetwork.resources.dao;
 
-import com.resources.rest.webservices.restfulwebservicesproject1.com.socialnetwork.resources.model.User;
+import com.resources.rest.webservices.socialnetwork.com.socialnetwork.resources.model.User;
 import org.springframework.stereotype.Component;
 
 import java.util.Date;

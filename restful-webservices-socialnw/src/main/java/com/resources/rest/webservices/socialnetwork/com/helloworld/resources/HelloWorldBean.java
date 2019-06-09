@@ -1,4 +1,4 @@
-package com.resources.rest.webservices.restfulwebservicesproject1.com.helloworld.resources;
+package com.resources.rest.webservices.socialnetwork.com.helloworld.resources;
 
 public class HelloWorldBean {
 

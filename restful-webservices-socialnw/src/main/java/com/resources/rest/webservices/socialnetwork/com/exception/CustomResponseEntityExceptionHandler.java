@@ -1,6 +1,6 @@
-package com.resources.rest.webservices.restfulwebservicesproject1.com.exception;
+package com.resources.rest.webservices.socialnetwork.com.exception;
 
-import com.resources.rest.webservices.restfulwebservicesproject1.com.socialnetwork.resources.exceptions.UserNotFoundException;
+import com.resources.rest.webservices.socialnetwork.com.socialnetwork.resources.exceptions.UserNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
