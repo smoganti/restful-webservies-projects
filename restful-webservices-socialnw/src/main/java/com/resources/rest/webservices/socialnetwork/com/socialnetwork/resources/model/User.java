@@ -1,20 +1,27 @@
 package com.resources.rest.webservices.socialnetwork.com.socialnetwork.resources.model;
 
+import org.springframework.hateoas.ResourceSupport;
+
+import javax.validation.constraints.Past;
+import javax.validation.constraints.Size;
 import java.util.Date;
 
-public class User {
+public class User extends ResourceSupport {
 
     public User(){}
 
-    public User(String name, Integer id, Date dateOfBirth) {
+    public User(@Size(min = 2, max = 30, message = "Minimum 2 characters and Maximum 30 only") String name, Integer userId, @Past(message = "Date must a valid Past Date") Date dateOfBirth) {
         this.name = name;
-        this.id = id;
+        this.userId = userId;
         this.dateOfBirth = dateOfBirth;
     }
 
+    @Size (min = 2,max = 30,message = "Minimum 2 characters and Maximum 30 only")
     private String name;
-    private Integer id;
+    private Integer userId;
+    @Past(message = "Date must a valid Past Date")
     private Date dateOfBirth;
+
 
     public String getName() {
         return name;
@@ -24,12 +31,12 @@ public class User {
         this.name = name;
     }
 
-    public Integer getId() {
-        return id;
+    public Integer getUserId() {
+        return userId;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setUserId(Integer userId) {
+        this.userId = userId;
     }
 
     public Date getDateOfBirth() {
@@ -44,7 +51,7 @@ public class User {
     public String toString() {
         return "User{" +
                 "name='" + name + '\'' +
-                ", id=" + id +
+                ", userId=" + userId +
                 ", dateOfBirth=" + dateOfBirth +
                 '}';
     }

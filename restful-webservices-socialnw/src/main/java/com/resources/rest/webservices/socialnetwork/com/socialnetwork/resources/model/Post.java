@@ -1,8 +1,10 @@
 package com.resources.rest.webservices.socialnetwork.com.socialnetwork.resources.model;
 
+import org.springframework.hateoas.ResourceSupport;
+
 import java.util.List;
 
-public class Post {
+public class Post extends ResourceSupport {
     private Integer postId;
     private String postMessage;
     private String postName;
@@ -55,5 +57,16 @@ public class Post {
 
     public void setCommentsList(List<Comments> commentsList) {
         this.commentsList = commentsList;
+    }
+
+    @Override
+    public String toString() {
+        return "Post{" +
+                "postId=" + postId +
+                ", postMessage='" + postMessage + '\'' +
+                ", postName='" + postName + '\'' +
+                ", userId=" + userId +
+                ", commentsList=" + commentsList +
+                '}';
     }
 }

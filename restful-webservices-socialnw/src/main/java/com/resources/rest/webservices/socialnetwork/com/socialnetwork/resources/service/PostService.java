@@ -1,12 +1,15 @@
-package com.resources.rest.webservices.socialnetwork.com.socialnetwork.resources.dao;
+package com.resources.rest.webservices.socialnetwork.com.socialnetwork.resources.service;
 
 import com.resources.rest.webservices.socialnetwork.com.socialnetwork.resources.model.Post;
 import org.springframework.stereotype.Component;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 @Component
-public class PostDaoService {
+public class PostService {
     private static ConcurrentHashMap<Integer, Post> postMap = new ConcurrentHashMap<>();
     private static Integer postCount = 3;
 
@@ -30,6 +33,22 @@ public class PostDaoService {
         }
         postMap.put(post.getPostId(),post);
         return post;
+    }
+
+    public Post deleteById(int id){
+        return postMap.remove(id);
+    }
+
+    public List<Post> findPostByUserId(Integer userId){
+
+        List<Post> postList = new ArrayList<>();
+        for(Map.Entry<Integer,Post> entry:postMap.entrySet()){
+            if(entry.getValue().getUserId().equals(userId)){
+                postList.add(entry.getValue());
+            }
+        }
+        return postList;
+
     }
 
 
