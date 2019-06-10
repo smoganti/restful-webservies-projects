@@ -1,8 +1,8 @@
 package com.resources.rest.webservices.socialnetwork.com.socialnetwork.resources;
 
-import com.resources.rest.webservices.socialnetwork.com.socialnetwork.resources.dao.PostDaoService;
 import com.resources.rest.webservices.socialnetwork.com.socialnetwork.resources.exceptions.PostNotFoundException;
 import com.resources.rest.webservices.socialnetwork.com.socialnetwork.resources.model.Post;
+import com.resources.rest.webservices.socialnetwork.com.socialnetwork.resources.service.PostService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -13,25 +13,26 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 @RestController
+@RequestMapping(value = "/post")
 public class PostController {
 
     @Autowired
-    private PostDaoService postDaoService;
+    private PostService postService;
 
-    @GetMapping(path = "/post/getPosts")
-    public ConcurrentHashMap<Integer, Post> retrieveAllPosts(){
-        return postDaoService.getAll();
+    @GetMapping(path = "/getPosts")
+    public ConcurrentHashMap<Integer, Post> retrieveAllPosts() {
+        return postService.getAll();
     }
 
-    @GetMapping(path = "/post/{id}")
-    public Post getPost(@PathVariable Integer id){
-        return postDaoService.findOne(id);
+    @GetMapping(path = "/{id}")
+    public Post getPost(@PathVariable Integer id) {
+        return postService.findOne(id);
     }
 
-    @PostMapping(path = "/post/getPosts")
-    public ResponseEntity<Object> saveAllPosts(@RequestBody ConcurrentHashMap<Integer,Post> postMap){
-        for(Map.Entry<Integer,Post> entry:postMap.entrySet()){
-            postDaoService.save(entry.getValue());
+    @PostMapping(path = "/getPosts")
+    public ResponseEntity<Object> saveAllPosts(@RequestBody ConcurrentHashMap<Integer, Post> postMap) {
+        for (Map.Entry<Integer, Post> entry : postMap.entrySet()) {
+            postService.save(entry.getValue());
 
         }
 
@@ -43,11 +44,11 @@ public class PostController {
     }
 
 
-    @PostMapping(value = "/post")
-    public ResponseEntity<Post> savePost(@RequestBody Post post){
-        Post savedPost = postDaoService.save(post);
+    @PostMapping(value = "")
+    public ResponseEntity<Post> savePost(@RequestBody Post post) {
+        Post savedPost = postService.save(post);
 
-        if(savedPost == null){
+        if (savedPost == null) {
             throw new PostNotFoundException("Post Not Found");
         }
 
@@ -57,6 +58,16 @@ public class PostController {
                 .buildAndExpand(savedPost.getPostId())
                 .toUri();
         return ResponseEntity.created(location).build();
+    }
+
+    @DeleteMapping(value = "/{id}")
+    public void deletePost(@PathVariable Integer id) {
+        Post post = postService.deleteById(id);
+
+        if (post == null) {
+            throw new PostNotFoundException(" id : " + id);
+        }
+
     }
 
 }
