@@ -1,6 +1,6 @@
-package com.resources.rest.webservices.socialnetwork.com.exception;
+package com.resources.rest.webservices.socialnetwork.exception;
 
-import com.resources.rest.webservices.socialnetwork.com.socialnetwork.resources.exceptions.UserNotFoundException;
+import com.resources.rest.webservices.socialnetwork.resources.exceptions.UserNotFoundException;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

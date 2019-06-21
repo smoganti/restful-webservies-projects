@@ -1,13 +1,16 @@
-package com.resources.rest.webservices.socialnetwork.com.socialnetwork.resources;
+package com.resources.rest.webservices.socialnetwork.resources;
 
-import com.resources.rest.webservices.socialnetwork.com.socialnetwork.resources.exceptions.UserNotFoundException;
-import com.resources.rest.webservices.socialnetwork.com.socialnetwork.resources.model.Post;
-import com.resources.rest.webservices.socialnetwork.com.socialnetwork.resources.model.User;
-import com.resources.rest.webservices.socialnetwork.com.socialnetwork.resources.service.PostService;
-import com.resources.rest.webservices.socialnetwork.com.socialnetwork.resources.service.UserService;
+import com.resources.rest.webservices.socialnetwork.kafka.producer.Producer;
+import com.resources.rest.webservices.socialnetwork.resources.constants.Topics;
+import com.resources.rest.webservices.socialnetwork.resources.exceptions.UserNotFoundException;
+import com.resources.rest.webservices.socialnetwork.resources.model.Post;
+import com.resources.rest.webservices.socialnetwork.resources.model.User;
+import com.resources.rest.webservices.socialnetwork.resources.service.PostService;
+import com.resources.rest.webservices.socialnetwork.resources.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.hateoas.Link;
 import org.springframework.hateoas.Resources;
+import org.springframework.hateoas.mvc.ControllerLinkBuilder;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
@@ -30,6 +33,8 @@ public class UserController {
     private UserService userService;
     @Autowired
     private PostService postService;
+    @Autowired
+    private Producer producer;
 
     //retrieve all users
     @GetMapping(path = "/getUsers")
@@ -64,7 +69,8 @@ public class UserController {
     public ResponseEntity<User> saveUserList(@RequestBody ConcurrentHashMap<Integer, User> userMap) {
 
         for (Map.Entry<Integer, User> entry : userMap.entrySet()) {
-            userService.save(entry.getValue());
+            User savedUser = userService.save(entry.getValue());
+            producer.sendMessage(savedUser, Topics.USERS);
         }
 
         URI location = ServletUriComponentsBuilder
@@ -82,6 +88,9 @@ public class UserController {
         if (savedUser == null) {
             throw new UserNotFoundException("Not Found");
         }
+
+         producer.sendMessage(savedUser, Topics.USERS);
+
         URI location = ServletUriComponentsBuilder
                 .fromCurrentRequest()
                 .path("/{id}")
@@ -108,7 +117,7 @@ public class UserController {
 
         for (Post post : postList
         ) {
-            Link link = linkTo(methodOn(PostController.class)
+            Link link = ControllerLinkBuilder.linkTo(methodOn(PostController.class)
                     .getPost(post.getPostId()))
                     .withSelfRel();
             post.add(link);
@@ -120,6 +129,5 @@ public class UserController {
         return new Resources<>(postList, link);
 
     }
-
 
 }

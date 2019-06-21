@@ -1,4 +1,4 @@
-package com.resources.rest.webservices.socialnetwork.com.socialnetwork.resources.model;
+package com.resources.rest.webservices.socialnetwork.resources.model;
 
 public class Comments {
     private String commentMessage;

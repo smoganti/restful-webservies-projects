@@ -1,4 +1,4 @@
-package com.resources.rest.webservices.socialnetwork.com.exception;
+package com.resources.rest.webservices.socialnetwork.exception;
 
 import java.util.Date;
 

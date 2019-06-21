@@ -1,4 +1,4 @@
-package com.resources.rest.webservices.socialnetwork.com.socialnetwork.resources.model;
+package com.resources.rest.webservices.socialnetwork.resources.model;
 
 import org.springframework.hateoas.ResourceSupport;
 
@@ -49,7 +49,7 @@ public class User extends ResourceSupport {
 
     @Override
     public String toString() {
-        return "User{" +
+        return "{" +
                 "name='" + name + '\'' +
                 ", userId=" + userId +
                 ", dateOfBirth=" + dateOfBirth +
