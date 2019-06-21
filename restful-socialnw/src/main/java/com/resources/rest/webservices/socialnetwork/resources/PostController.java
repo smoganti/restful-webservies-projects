@@ -1,8 +1,10 @@
-package com.resources.rest.webservices.socialnetwork.com.socialnetwork.resources;
+package com.resources.rest.webservices.socialnetwork.resources;
 
-import com.resources.rest.webservices.socialnetwork.com.socialnetwork.resources.exceptions.PostNotFoundException;
-import com.resources.rest.webservices.socialnetwork.com.socialnetwork.resources.model.Post;
-import com.resources.rest.webservices.socialnetwork.com.socialnetwork.resources.service.PostService;
+import com.resources.rest.webservices.socialnetwork.kafka.producer.Producer;
+import com.resources.rest.webservices.socialnetwork.resources.constants.Topics;
+import com.resources.rest.webservices.socialnetwork.resources.exceptions.PostNotFoundException;
+import com.resources.rest.webservices.socialnetwork.resources.model.Post;
+import com.resources.rest.webservices.socialnetwork.resources.service.PostService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -18,6 +20,8 @@ public class PostController {
 
     @Autowired
     private PostService postService;
+    @Autowired
+    private Producer producer;
 
     @GetMapping(path = "/getPosts")
     public ConcurrentHashMap<Integer, Post> retrieveAllPosts() {
@@ -32,8 +36,8 @@ public class PostController {
     @PostMapping(path = "/getPosts")
     public ResponseEntity<Object> saveAllPosts(@RequestBody ConcurrentHashMap<Integer, Post> postMap) {
         for (Map.Entry<Integer, Post> entry : postMap.entrySet()) {
-            postService.save(entry.getValue());
-
+            Post savedPost = postService.save(entry.getValue());
+            producer.sendMessage(savedPost, Topics.POSTS);
         }
 
         URI location = ServletUriComponentsBuilder
@@ -51,6 +55,8 @@ public class PostController {
         if (savedPost == null) {
             throw new PostNotFoundException("Post Not Found");
         }
+
+        producer.sendMessage(savedPost, Topics.POSTS);
 
         URI location = ServletUriComponentsBuilder
                 .fromCurrentRequest()

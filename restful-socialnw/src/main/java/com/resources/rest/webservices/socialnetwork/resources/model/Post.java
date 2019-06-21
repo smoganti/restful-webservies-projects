@@ -1,4 +1,4 @@
-package com.resources.rest.webservices.socialnetwork.com.socialnetwork.resources.model;
+package com.resources.rest.webservices.socialnetwork.resources.model;
 
 import org.springframework.hateoas.ResourceSupport;
 
@@ -61,7 +61,7 @@ public class Post extends ResourceSupport {
 
     @Override
     public String toString() {
-        return "Post{" +
+        return "{" +
                 "postId=" + postId +
                 ", postMessage='" + postMessage + '\'' +
                 ", postName='" + postName + '\'' +

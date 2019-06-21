@@ -1,6 +1,6 @@
-package com.resources.rest.webservices.socialnetwork.com.socialnetwork.resources.service;
+package com.resources.rest.webservices.socialnetwork.resources.service;
 
-import com.resources.rest.webservices.socialnetwork.com.socialnetwork.resources.model.User;
+import com.resources.rest.webservices.socialnetwork.resources.model.User;
 import org.springframework.stereotype.Component;
 
 import java.util.Date;
