@@ -1,11 +1,15 @@
 package com.resources.rest.webservices.socialnetwork.resources.model;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 import org.springframework.hateoas.ResourceSupport;
 
 import java.util.List;
 
+@ApiModel(description = "Details about the Post")
 public class Post extends ResourceSupport {
     private Integer postId;
+    @ApiModelProperty(notes = "Post message is described here")
     private String postMessage;
     private String postName;
     private Integer userId;
