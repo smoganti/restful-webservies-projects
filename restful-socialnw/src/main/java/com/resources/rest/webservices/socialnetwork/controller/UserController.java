@@ -1,12 +1,14 @@
-package com.resources.rest.webservices.socialnetwork.resources;
+package com.resources.rest.webservices.socialnetwork.controller;
 
 import com.resources.rest.webservices.socialnetwork.kafka.producer.Producer;
-import com.resources.rest.webservices.socialnetwork.resources.constants.Topics;
-import com.resources.rest.webservices.socialnetwork.resources.exceptions.UserNotFoundException;
-import com.resources.rest.webservices.socialnetwork.resources.model.Post;
-import com.resources.rest.webservices.socialnetwork.resources.model.User;
-import com.resources.rest.webservices.socialnetwork.resources.service.PostService;
-import com.resources.rest.webservices.socialnetwork.resources.service.UserService;
+import com.resources.rest.webservices.socialnetwork.constants.Topics;
+import com.resources.rest.webservices.socialnetwork.exceptions.UserNotFoundException;
+import com.resources.rest.webservices.socialnetwork.model.Post;
+import com.resources.rest.webservices.socialnetwork.model.User;
+import com.resources.rest.webservices.socialnetwork.service.PostService;
+import com.resources.rest.webservices.socialnetwork.service.UserService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.hateoas.Link;
 import org.springframework.hateoas.Resources;
@@ -29,6 +31,7 @@ import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
 @RestController
 public class UserController {
 
+    private static final Logger logger = LoggerFactory.getLogger(UserController.class);
     @Autowired
     private UserService userService;
     @Autowired
@@ -39,6 +42,7 @@ public class UserController {
     //retrieve all users
     @GetMapping(path = "/getUsers")
     public Resources<User> retrieveAllUsers() {
+        logger.info("UserController:: retrieveAllUsers():: Get All users running");
         ConcurrentHashMap<Integer, User> userMap = userService.getAll();
 
         for (Map.Entry<Integer, User> entry : userMap.entrySet()) {
@@ -58,6 +62,7 @@ public class UserController {
     //retrieve a user
     @GetMapping(path = "/{id}")
     public User getUser(@PathVariable int id) {
+        logger.info("UserController:: getUser():: getting the user for given id : " + id);
         User user = userService.findOne(id);
 
         if (user == null)
@@ -67,6 +72,8 @@ public class UserController {
 
     @PostMapping(path = "/getUsers")
     public ResponseEntity<User> saveUserList(@RequestBody ConcurrentHashMap<Integer, User> userMap) {
+
+        logger.info("UserController:: saveUserList():: saving userList ");
 
         for (Map.Entry<Integer, User> entry : userMap.entrySet()) {
             User savedUser = userService.save(entry.getValue());
@@ -84,6 +91,7 @@ public class UserController {
     @PostMapping(path = "")
     public ResponseEntity<User> saveUser(@Valid @RequestBody User user) {
 
+        logger.info("UserController:: saveUser():: saving user : " + user.toString());
         User savedUser = userService.save(user);
         if (savedUser == null) {
             throw new UserNotFoundException("Not Found");
@@ -102,6 +110,7 @@ public class UserController {
 
     @DeleteMapping(value = "/{id}")
     public User deleteUser(@PathVariable Integer id) {
+        logger.info("UserController:: deleteUser():: deleting user for id : " + id);
         User deletedUser = userService.deleteById(id);
         if (deletedUser == null)
             throw new UserNotFoundException("id : " + id);
@@ -113,6 +122,8 @@ public class UserController {
 
     @GetMapping(value = "/{userId}/posts")
     public Resources<Post> getPostForCustomerId(@PathVariable Integer userId) {
+
+        logger.info("UserController:: getPostForCustomerId():: getting post for userId : " + userId);
         List<Post> postList = postService.findPostByUserId(userId);
 
         for (Post post : postList

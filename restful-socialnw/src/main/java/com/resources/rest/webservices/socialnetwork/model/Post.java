@@ -1,4 +1,4 @@
-package com.resources.rest.webservices.socialnetwork.resources.model;
+package com.resources.rest.webservices.socialnetwork.model;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;

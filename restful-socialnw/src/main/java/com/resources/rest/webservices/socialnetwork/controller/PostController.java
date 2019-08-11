@@ -1,10 +1,12 @@
-package com.resources.rest.webservices.socialnetwork.resources;
+package com.resources.rest.webservices.socialnetwork.controller;
 
 import com.resources.rest.webservices.socialnetwork.kafka.producer.Producer;
-import com.resources.rest.webservices.socialnetwork.resources.constants.Topics;
-import com.resources.rest.webservices.socialnetwork.resources.exceptions.PostNotFoundException;
-import com.resources.rest.webservices.socialnetwork.resources.model.Post;
-import com.resources.rest.webservices.socialnetwork.resources.service.PostService;
+import com.resources.rest.webservices.socialnetwork.constants.Topics;
+import com.resources.rest.webservices.socialnetwork.exceptions.PostNotFoundException;
+import com.resources.rest.webservices.socialnetwork.model.Post;
+import com.resources.rest.webservices.socialnetwork.service.PostService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -18,6 +20,7 @@ import java.util.concurrent.ConcurrentHashMap;
 @RequestMapping(value = "/post")
 public class PostController {
 
+    private static final Logger logger = LoggerFactory.getLogger(PostController.class);
     @Autowired
     private PostService postService;
     @Autowired
@@ -35,6 +38,8 @@ public class PostController {
 
     @PostMapping(path = "/getPosts")
     public ResponseEntity<Object> saveAllPosts(@RequestBody ConcurrentHashMap<Integer, Post> postMap) {
+
+        logger.info("PostController:: saveAllPosts():: saving All posts ");
         for (Map.Entry<Integer, Post> entry : postMap.entrySet()) {
             Post savedPost = postService.save(entry.getValue());
             producer.sendMessage(savedPost, Topics.POSTS);
@@ -50,6 +55,8 @@ public class PostController {
 
     @PostMapping(value = "")
     public ResponseEntity<Post> savePost(@RequestBody Post post) {
+
+        logger.info("PostController:: savePost():: saving post : " + post.toString());
         Post savedPost = postService.save(post);
 
         if (savedPost == null) {
@@ -68,6 +75,8 @@ public class PostController {
 
     @DeleteMapping(value = "/{id}")
     public void deletePost(@PathVariable Integer id) {
+
+        logger.info("PostController:: deletePost():: deleting post for id : " + id);
         Post post = postService.deleteById(id);
 
         if (post == null) {
