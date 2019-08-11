@@ -2,7 +2,7 @@ package com.resources.rest.webservices.socialnetwork.controller;
 
 import com.resources.rest.webservices.socialnetwork.kafka.producer.Producer;
 import com.resources.rest.webservices.socialnetwork.constants.Topics;
-import com.resources.rest.webservices.socialnetwork.exceptions.UserNotFoundException;
+import com.resources.rest.webservices.socialnetwork.exception.exceptions.UserNotFoundException;
 import com.resources.rest.webservices.socialnetwork.model.Post;
 import com.resources.rest.webservices.socialnetwork.model.User;
 import com.resources.rest.webservices.socialnetwork.service.PostService;

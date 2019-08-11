@@ -2,7 +2,7 @@ package com.resources.rest.webservices.socialnetwork.controller;
 
 import com.resources.rest.webservices.socialnetwork.kafka.producer.Producer;
 import com.resources.rest.webservices.socialnetwork.constants.Topics;
-import com.resources.rest.webservices.socialnetwork.exceptions.PostNotFoundException;
+import com.resources.rest.webservices.socialnetwork.exception.exceptions.PostNotFoundException;
 import com.resources.rest.webservices.socialnetwork.model.Post;
 import com.resources.rest.webservices.socialnetwork.service.PostService;
 import org.slf4j.Logger;
