@@ -1,4 +1,4 @@
-package com.resources.rest.webservices.socialnetwork.resources.constants;
+package com.resources.rest.webservices.socialnetwork.constants;
 
 import org.springframework.stereotype.Component;
 

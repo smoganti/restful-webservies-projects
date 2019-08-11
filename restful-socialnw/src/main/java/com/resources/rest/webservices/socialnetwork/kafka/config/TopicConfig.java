@@ -1,4 +1,4 @@
-package com.resources.rest.webservices.socialnetwork.kafka.producer.config;
+package com.resources.rest.webservices.socialnetwork.kafka.config;
 
 import org.apache.kafka.clients.admin.AdminClientConfig;
 import org.apache.kafka.clients.admin.NewTopic;

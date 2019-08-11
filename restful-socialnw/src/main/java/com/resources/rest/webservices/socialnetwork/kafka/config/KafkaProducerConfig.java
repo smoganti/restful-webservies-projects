@@ -1,5 +1,5 @@
 
-package com.resources.rest.webservices.socialnetwork.kafka.producer.config;
+package com.resources.rest.webservices.socialnetwork.kafka.config;
 
 
 import org.apache.kafka.clients.producer.ProducerConfig;
