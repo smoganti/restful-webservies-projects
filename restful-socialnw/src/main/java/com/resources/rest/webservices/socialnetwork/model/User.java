@@ -2,6 +2,7 @@ package com.resources.rest.webservices.socialnetwork.model;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
+import org.springframework.data.redis.core.RedisHash;
 import org.springframework.hateoas.ResourceSupport;
 
 import javax.validation.constraints.Past;
@@ -9,6 +10,7 @@ import javax.validation.constraints.Size;
 import java.util.Date;
 
 @ApiModel(description = "Details about the User")
+@RedisHash("User")
 public class User extends ResourceSupport {
 
     public User(){}

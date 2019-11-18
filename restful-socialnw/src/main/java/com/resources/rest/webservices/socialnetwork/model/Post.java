@@ -2,11 +2,13 @@ package com.resources.rest.webservices.socialnetwork.model;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
+import org.springframework.data.redis.core.RedisHash;
 import org.springframework.hateoas.ResourceSupport;
 
 import java.util.List;
 
 @ApiModel(description = "Details about the Post")
+@RedisHash("Post")
 public class Post extends ResourceSupport {
     private Integer postId;
     @ApiModelProperty(notes = "Post message is described here")

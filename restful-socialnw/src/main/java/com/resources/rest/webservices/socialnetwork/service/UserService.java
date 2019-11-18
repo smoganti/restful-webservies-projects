@@ -26,7 +26,8 @@ public class UserService {
 
     public ConcurrentHashMap<Integer, User> getAll() {
         logger.info("UserService:: getAll():: Get all users : ");
-        return userMap;
+        //return userRedisR
+        return null;
     }
 
     public User save(User user) {
