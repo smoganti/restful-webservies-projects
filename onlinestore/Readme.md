@@ -1,12 +1,12 @@
--- ``docker run -p 3306:3306 --name smartportables -e MYSQL_ROOT_PASSWORD=root -d mysql:8.0.18``
--- ``docker run --name myadmin -d --link smartportables:db -p 8090:80 phpmyadmin/phpmyadmin``
+- ``docker run -p 3306:3306 --name smartportables -e MYSQL_ROOT_PASSWORD=root -d mysql:8.0.18``
+- ``docker run --name myadmin -d --link smartportables:db -p 8090:80 phpmyadmin/phpmyadmin``
 
 
--- ``mysql -uroot -proot``
--- ``ALTER USER root IDENTIFIED WITH mysql_native_password BY ‘root’;``
+- ``mysql -uroot -proot``
+- ``ALTER USER root IDENTIFIED WITH mysql_native_password BY ‘root’;``
 
 
--- CREATE TABLE `Orders` (
+- CREATE TABLE `Orders` (
   `O_Id` varchar(30) DEFAULT NULL,
   `u_Id` varchar(30) DEFAULT NULL,
   `O_Ddate` varchar(20) DEFAULT NULL,
@@ -22,7 +22,7 @@
   `card_number` varchar(20) DEFAULT NULL
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8;
 
--- CREATE TABLE `users` (
+- CREATE TABLE `users` (
   `firstName` varchar(40) DEFAULT NULL,
   `lastName` varchar(40) DEFAULT NULL,
   `userId` varchar(30) DEFAULT NULL,
@@ -31,7 +31,7 @@
   `usertype` varchar(40) DEFAULT NULL
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8;
 
--- CREATE TABLE `products` (
+- CREATE TABLE `products` (
   `name` varchar(50) DEFAULT NULL,
   `id` varchar(20) DEFAULT NULL,
   `quantity` int(4) DEFAULT NULL,
@@ -43,7 +43,7 @@
   `rebateAmt` varchar(30) DEFAULT NULL
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8;
 
--- create table accessorys(
+- create table accessorys(
   a_id varchar(10) not null,
   p_id varchar(10) not null,
   a_image varchar(50),
