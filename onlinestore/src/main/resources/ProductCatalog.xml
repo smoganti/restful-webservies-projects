@@ -1,0 +1,1579 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ProductCatalog>
+    <product id="SMW991">
+        <imageUrl>images/Fitbit Blaze.jpg</imageUrl>
+        <name>Fitbit Blaze</name>
+        <price>149</price>
+        <quantity>100</quantity>
+        <description>Smart Fitness Watch Black, Silver, Large ,a smart fitness watch that helps you maximize every
+            workout and every day Interchangeable band, frames and customizable clock faces
+        </description>
+        <display_under>smartWatch</display_under>
+        <discounAmt>50.0</discounAmt>
+        <rebateAmt>0.0</rebateAmt>
+        <accessories>
+            <accessory>
+                <aimageUrl>images/W1.jpg</aimageUrl>
+                <aname>Samsung</aname>
+                <aId>A0011</aId>
+                <aprice>19</aprice>
+                <adescription>Connecting charger</adescription>
+            </accessory>
+            <accessory>
+                <aimageUrl>images/W2.jpg</aimageUrl>
+                <aname>Aosmart</aname>
+                <aId>A0012</aId>
+                <aprice>9</aprice>
+                <adescription>Smart watch belt</adescription>
+            </accessory>
+            <accessory>
+                <aimageUrl>images/W3.jpg</aimageUrl>
+                <aname>CNPGD</aname>
+                <aId>A0013</aId>
+                <aprice>29</aprice>
+                <adescription>Smart watch belt and tools</adescription>
+            </accessory>
+        </accessories>
+    </product>
+    <product id="SMW992">
+        <imageUrl>images/Apple Watch Series2.jpg</imageUrl>
+        <name>Apple Watch Series2</name>
+        <price>1799</price>
+        <quantity>150</quantity>
+        <description>38mm Smartwatch Gold Aluminum Case, Midnight Blue Sport Band, Apple's Watch moves your iPhone's
+            apps and functions to your wrist Series 2, Built-in GPS, Water Resistant 50m, watchOS 3
+        </description>
+        <display_under>smartWatch</display_under>
+        <discounAmt>100.0</discounAmt>
+        <rebateAmt>0.0</rebateAmt>
+        <accessories>
+            <accessory>
+                <aimageUrl>images/w1.jpg</aimageUrl>
+                <aname>Air cover</aname>
+                <aId>A0011</aId>
+                <aprice>59</aprice>
+                <adescription>Connecting charger</adescription>
+            </accessory>
+            <accessory>
+                <aimageUrl>images/w2.jpg</aimageUrl>
+                <aname>Apple Strap</aname>
+                <aId>A0012</aId>
+                <aprice>59</aprice>
+                <adescription>Smart watch belt</adescription>
+            </accessory>
+            <accessory>
+                <aimageUrl>images/w3.jpg</aimageUrl>
+                <aname>Apple airpod</aname>
+                <aId>A0013</aId>
+                <aprice>59</aprice>
+                <adescription>Smart watch belt and tools</adescription>
+            </accessory>
+        </accessories>
+    </product>
+    <product id="SMW993">
+        <imageUrl>images/Apple Series 2 Watch.jpg</imageUrl>
+        <name>Apple Series 2 Watch</name>
+        <price>199</price>
+        <quantity>200</quantity>
+        <description>42mm Space Gray Aluminum Case with Black Sport Band, Changeable Faces with Widgets, Siri
+            Integration Curved edge design comes with a Space Gray anodized aluminum chassis and a black Sport band
+        </description>
+        <display_under>smartWatch</display_under>
+        <discounAmt>200.0</discounAmt>
+        <rebateAmt>0.0</rebateAmt>
+        <accessories>
+            <accessory>
+                <aimageUrl>images/W1.jpg</aimageUrl>
+                <aname>Samsung</aname>
+                <aId>A0011</aId>
+                <aprice>19</aprice>
+                <adescription>Connecting charger</adescription>
+            </accessory>
+            <accessory>
+                <aimageUrl>images/W2.jpg</aimageUrl>
+                <aname>Aosmart</aname>
+                <aId>A0012</aId>
+                <aprice>9</aprice>
+                <adescription>Smart watch belt</adescription>
+            </accessory>
+            <accessory>
+                <aimageUrl>images/W3.jpg</aimageUrl>
+                <aname>CNPGD</aname>
+                <aId>A0013</aId>
+                <aprice>29</aprice>
+                <adescription>Smart watch belt and tools</adescription>
+            </accessory>
+        </accessories>
+    </product>
+    <product id="SMW994">
+        <imageUrl>images/Samsung Gear Fit2.jpg</imageUrl>
+        <name>Samsung Gear Fit2</name>
+        <price>499</price>
+        <quantity>200</quantity>
+        <description>Smartwatch Large, Black, water-resistant (5) and features a curved full-color Super AMOLED screen
+            Also it is one among the costliest Watches
+        </description>
+        <display_under>smartWatch</display_under>
+        <discounAmt>0.0</discounAmt>
+        <rebateAmt>0.0</rebateAmt>
+        <accessories>
+            <accessory>
+                <aimageUrl>images/W1.jpg</aimageUrl>
+                <aname>Samsung</aname>
+                <aId>A0011</aId>
+                <aprice>19</aprice>
+                <adescription>Connecting charger</adescription>
+            </accessory>
+            <accessory>
+                <aimageUrl>images/W2.jpg</aimageUrl>
+                <aname>Aosmart</aname>
+                <aId>A0012</aId>
+                <aprice>9</aprice>
+                <adescription>Smart watch belt</adescription>
+            </accessory>
+            <accessory>
+                <aimageUrl>images/W3.jpg</aimageUrl>
+                <aname>CNPGD</aname>
+                <aId>A0013</aId>
+                <aprice>29</aprice>
+                <adescription>Smart watch belt and tools</adescription>
+            </accessory>
+        </accessories>
+    </product>
+    <product id="SMW995">
+        <imageUrl>images/Samsung Gear S3.jpg</imageUrl>
+        <name>Samsung Gear S3</name>
+        <price>379</price>
+        <quantity>100</quantity>
+        <description>Frontier SM-R760 Smartwatch International Version Memory : 768MB (RAM) + 4GB (ROM) / Chipset :
+            Exynos 7270, Dual 1.0GHz / OS : Tizen OS 2.3.2
+        </description>
+        <display_under>smartWatch</display_under>
+        <discounAmt>0.0</discounAmt>
+        <rebateAmt>0.0</rebateAmt>
+        <accessories>
+            <accessory>
+                <aimageUrl>images/W1.jpg</aimageUrl>
+                <aname>Samsung</aname>
+                <aId>A0011</aId>
+                <aprice>19</aprice>
+                <adescription>Connecting charger</adescription>
+            </accessory>
+            <accessory>
+                <aimageUrl>images/W2.jpg</aimageUrl>
+                <aname>Aosmart</aname>
+                <aId>A0012</aId>
+                <aprice>9</aprice>
+                <adescription>Smart watch belt</adescription>
+            </accessory>
+            <accessory>
+                <aimageUrl>images/W3.jpg</aimageUrl>
+                <aname>CNPGD</aname>
+                <aId>A0013</aId>
+                <aprice>29</aprice>
+                <adescription>Smart watch belt and tools</adescription>
+            </accessory>
+        </accessories>
+    </product>
+    <product id="SMW996">
+        <imageUrl>images/ASUS ZenWatch 3.jpg</imageUrl>
+        <name>ASUS ZenWatch 3</name>
+        <price>649</price>
+        <quantity>300</quantity>
+        <description>WI503Q-GL-DB 1.39-inch AMOLED Smart Watch, 1.39" AMOLED Display protected by Corning Gorilla Glass
+            3 with stainless steel and diamond-cut bezel Customizable multiple button design
+        </description>
+        <display_under>smartWatch</display_under>
+        <discounAmt>50.0</discounAmt>
+        <rebateAmt>0.0</rebateAmt>
+        <accessories>
+            <accessory>
+                <aimageUrl>images/W1.jpg</aimageUrl>
+                <aname>Samsung</aname>
+                <aId>A0011</aId>
+                <aprice>19</aprice>
+                <adescription>Connecting charger</adescription>
+            </accessory>
+            <accessory>
+                <aimageUrl>images/W2.jpg</aimageUrl>
+                <aname>Aosmart</aname>
+                <aId>A0012</aId>
+                <aprice>9</aprice>
+                <adescription>Smart watch belt</adescription>
+            </accessory>
+            <accessory>
+                <aimageUrl>images/W3.jpg</aimageUrl>
+                <aname>CNPGD</aname>
+                <aId>A0013</aId>
+                <aprice>29</aprice>
+                <adescription>Smart watch belt and tools</adescription>
+            </accessory>
+        </accessories>
+    </product>
+    <product id="SMW997">
+        <imageUrl>images/Huawei Watch 2.jpg</imageUrl>
+        <name>Huawei Watch 2</name>
+        <price>299</price>
+        <quantity>250</quantity>
+        <description>Carbon Black Android Wear 2.0 (US Warranty) ,Built-in GPS and continuous heart rate: monitor NFC
+            and Google assistant, Long battery life
+        </description>
+        <display_under>smartWatch</display_under>
+        <discounAmt>100.0</discounAmt>
+        <rebateAmt>0.0</rebateAmt>
+        <accessories>
+            <accessory>
+                <aimageUrl>images/W1.jpg</aimageUrl>
+                <aname>Sony</aname>
+                <aId>A0029</aId>
+                <aprice>59</aprice>
+                <adescription>Connecting charger</adescription>
+            </accessory>
+            <accessory>
+                <aimageUrl>images/W3.jpg</aimageUrl>
+                <aname>Sony</aname>
+                <aId>A0030</aId>
+                <aprice>59</aprice>
+                <adescription>Smart watch belt</adescription>
+            </accessory>
+            <accessory>
+                <aimageUrl>images/W5.jpg</aimageUrl>
+                <aname>Sony</aname>
+                <aId>A0031</aId>
+                <aprice>59</aprice>
+                <adescription>Smart watch belt and tools</adescription>
+            </accessory>
+        </accessories>
+    </product>
+    <product id="SMW998">
+        <imageUrl>images/Pebble Time.jpg</imageUrl>
+        <name>Pebble Time</name>
+        <price>99</price>
+        <quantity>180</quantity>
+        <description>Round 14mm Smartwatch Apple/Android Devices, The world's lightest and thinnest smart watch
+            Silver/Stone Full suite of Pebble features, including timeline calendar alerts
+        </description>
+        <display_under>smartWatch</display_under>
+        <discounAmt>200.0</discounAmt>
+        <rebateAmt>0.0</rebateAmt>
+        <accessories>
+            <accessory>
+                <aimageUrl>images/W1.jpg</aimageUrl>
+                <aname>Samsung</aname>
+                <aId>A0011</aId>
+                <aprice>19</aprice>
+                <adescription>Connecting charger</adescription>
+            </accessory>
+            <accessory>
+                <aimageUrl>images/W2.jpg</aimageUrl>
+                <aname>Aosmart</aname>
+                <aId>A0012</aId>
+                <aprice>9</aprice>
+                <adescription>Smart watch belt</adescription>
+            </accessory>
+            <accessory>
+                <aimageUrl>images/W3.jpg</aimageUrl>
+                <aname>CNPGD</aname>
+                <aId>A0013</aId>
+                <aprice>29</aprice>
+                <adescription>Smart watch belt and tools</adescription>
+            </accessory>
+        </accessories>
+    </product>
+    <product id="SMW999">
+        <imageUrl>images/Garmin 5X.jpg</imageUrl>
+        <name>Garmin 5X</name>
+        <price>499</price>
+        <quantity>100</quantity>
+        <description>beautiful design and protective PVD-coated stainless steel bezel display</description>
+        <display_under>smartWatch</display_under>
+        <discounAmt>0.0</discounAmt>
+        <rebateAmt>0.0</rebateAmt>
+        <accessories>
+            <accessory>
+                <aimageUrl>images/W1.jpg</aimageUrl>
+                <aname>Samsung</aname>
+                <aId>A0011</aId>
+                <aprice>19</aprice>
+                <adescription>Connecting charger</adescription>
+            </accessory>
+            <accessory>
+                <aimageUrl>images/W2.jpg</aimageUrl>
+                <aname>Aosmart</aname>
+                <aId>A0012</aId>
+                <aprice>9</aprice>
+                <adescription>Smart watch belt</adescription>
+            </accessory>
+            <accessory>
+                <aimageUrl>images/W3.jpg</aimageUrl>
+                <aname>CNPGD</aname>
+                <aId>A0013</aId>
+                <aprice>29</aprice>
+                <adescription>Smart watch belt and tools</adescription>
+            </accessory>
+        </accessories>
+    </product>
+
+    <product id="HAD91">
+        <imageUrl>images/Panasonic.jpg</imageUrl>
+        <name>Panasonic</name>
+        <price>49</price>
+        <quantity>70</quantity>
+        <description>On-Ear Stereo Headphones RP-HT2 Lightweight, open-air design on-ear headphones weigh just 1.2 oz
+        </description>
+        <display_under>Headphone</display_under>
+        <discounAmt>0.0</discounAmt>
+        <rebateAmt>0.0</rebateAmt>
+        <accessories>
+            <accessory>
+                <aimageUrl>images/E2.jpg</aimageUrl>
+                <aname>Panasonic</aname>
+                <aId>HAD001</aId>
+                <aprice>19</aprice>
+                <adescription>Headphone hanger</adescription>
+            </accessory>
+            <accessory>
+                <aimageUrl>images/E3.jpg</aimageUrl>
+                <aname>Panasonic</aname>
+                <aId>HAD002</aId>
+                <aprice>12</aprice>
+                <adescription>Headphone stand</adescription>
+            </accessory>
+            <accessory>
+                <aimageUrl>images/E6.jpg</aimageUrl>
+                <aname>Panasonic</aname>
+                <aId>HAD003</aId>
+                <aprice>13</aprice>
+                <adescription>Headphone connector</adescription>
+            </accessory>
+        </accessories>
+    </product>
+    <product id="HAD92">
+        <imageUrl>images/Bose.jpg</imageUrl>
+        <name>Bose</name>
+        <price>199</price>
+        <quantity>90</quantity>
+        <description>Wireless Headphones, Noise Cancelling, World-class noise cancellation makes quiet sound quieter
+        </description>
+        <display_under>Headphone</display_under>
+        <discounAmt>0.0</discounAmt>
+        <rebateAmt>0.0</rebateAmt>
+        <accessories>
+            <accessory>
+                <aimageUrl>images/E2.jpg</aimageUrl>
+                <aname>Bose</aname>
+                <aId>HAD004</aId>
+                <aprice>20</aprice>
+                <adescription>Headphone hanger</adescription>
+            </accessory>
+            <accessory>
+                <aimageUrl>images/E3.jpg</aimageUrl>
+                <aname>Bose</aname>
+                <aId>HAD005</aId>
+                <aprice>15</aprice>
+                <adescription>Headphone stand</adescription>
+            </accessory>
+            <accessory>
+                <aimageUrl>images/E6.jpg</aimageUrl>
+                <aname>Bose</aname>
+                <aId>HAD006</aId>
+                <aprice>13</aprice>
+                <adescription>Headphone connector</adescription>
+            </accessory>
+        </accessories>
+    </product>
+    <product id="HAD93">
+        <imageUrl>images/Sony.jpg</imageUrl>
+        <name>Sony</name>
+        <price>149</price>
+        <quantity>100</quantity>
+        <description>Sony MDRZX110 ZX Series Stereo Headphones-Black</description>
+        <display_under>Headphone</display_under>
+        <discounAmt>0.0</discounAmt>
+        <rebateAmt>0.0</rebateAmt>
+        <accessories>
+            <accessory>
+                <aimageUrl>images/E2.jpg</aimageUrl>
+                <aname>Sony</aname>
+                <aId>HAD007</aId>
+                <aprice>59</aprice>
+                <adescription>Headphone hanger</adescription>
+            </accessory>
+            <accessory>
+                <aimageUrl>images/E3.jpg</aimageUrl>
+                <aname>Sony</aname>
+                <aId>HAD008</aId>
+                <aprice>59</aprice>
+                <adescription>Headphone stand</adescription>
+            </accessory>
+            <accessory>
+                <aimageUrl>images/E6.jpg</aimageUrl>
+                <aname>Sony</aname>
+                <aId>HAD009</aId>
+                <aprice>59</aprice>
+                <adescription>Headphone connector</adescription>
+            </accessory>
+        </accessories>
+    </product>
+    <product id="HAD94">
+        <imageUrl>images/Monster.jpg</imageUrl>
+        <name>Monster</name>
+        <price>999</price>
+        <quantity>200</quantity>
+        <description>By Dr Dre Ibeats in Ear Headphones Earphones Black, These in-ear headphones incorporate driver
+        </description>
+        <display_under>Headphone</display_under>
+        <discounAmt>0.0</discounAmt>
+        <rebateAmt>0.0</rebateAmt>
+        <accessories>
+            <accessory>
+                <aimageUrl>images/E2.jpg</aimageUrl>
+                <aname>Monster</aname>
+                <aId>HAD010</aId>
+                <aprice>25</aprice>
+                <adescription>Headphone hanger</adescription>
+            </accessory>
+            <accessory>
+                <aimageUrl>images/E3.jpg</aimageUrl>
+                <aname>Monster</aname>
+                <aId>HAD011</aId>
+                <aprice>19</aprice>
+                <adescription>Headphone stand</adescription>
+            </accessory>
+            <accessory>
+                <aimageUrl>images/E6.jpg</aimageUrl>
+                <aname>Monster</aname>
+                <aId>HAD012</aId>
+                <aprice>14</aprice>
+                <adescription>Headphone connector</adescription>
+            </accessory>
+        </accessories>
+    </product>
+    <product id="HAD95">
+        <imageUrl>images/Skullcandy.jpg</imageUrl>
+        <name>Skullcandy</name>
+        <price>99</price>
+        <quantity>180</quantity>
+        <description>Widely Celebrated Acoustics</description>
+        <display_under>Headphone</display_under>
+        <discounAmt>0.0</discounAmt>
+        <rebateAmt>0.0</rebateAmt>
+        <accessories>
+            <accessory>
+                <aimageUrl>images/E2.jpg</aimageUrl>
+                <aname>Skullcandy</aname>
+                <aId>HAD010</aId>
+                <aprice>25</aprice>
+                <adescription>Headphone hanger</adescription>
+            </accessory>
+            <accessory>
+                <aimageUrl>images/E3.jpg</aimageUrl>
+                <aname>Skullcandy</aname>
+                <aId>HAD011</aId>
+                <aprice>19</aprice>
+                <adescription>Headphone stand</adescription>
+            </accessory>
+            <accessory>
+                <aimageUrl>images/E6.jpg</aimageUrl>
+                <aname>Skullcandy</aname>
+                <aId>HAD012</aId>
+                <aprice>14</aprice>
+                <adescription>Headphone connector</adescription>
+            </accessory>
+        </accessories>
+    </product>
+    <product id="HAD96">
+        <imageUrl>images/Panasonic P30.jpg</imageUrl>
+        <name>Panasonic P30</name>
+        <price>49</price>
+        <quantity>195</quantity>
+        <description>By Dr Dre Ibeats in Ear Headphones Earphones Black, These in-ear headphones incorporate driver
+        </description>
+        <display_under>Headphone</display_under>
+        <discounAmt>0.0</discounAmt>
+        <rebateAmt>0.0</rebateAmt>
+        <accessories>
+            <accessory>
+                <aimageUrl>images/E2.jpg</aimageUrl>
+                <aname>Panasonic</aname>
+                <aId>HAD010</aId>
+                <aprice>25</aprice>
+                <adescription>Headphone hanger</adescription>
+            </accessory>
+            <accessory>
+                <aimageUrl>images/E3.jpg</aimageUrl>
+                <aname>Panasonic</aname>
+                <aId>HAD011</aId>
+                <aprice>19</aprice>
+                <adescription>Headphone stand</adescription>
+            </accessory>
+            <accessory>
+                <aimageUrl>images/E6.jpg</aimageUrl>
+                <aname>Panasonic</aname>
+                <aId>HAD012</aId>
+                <aprice>14</aprice>
+                <adescription>Headphone connector</adescription>
+            </accessory>
+        </accessories>
+    </product>
+    <product id="HAD97">
+        <imageUrl>images/Bose U12.jpg</imageUrl>
+        <name>Bose U12</name>
+        <price>199</price>
+        <quantity>210</quantity>
+        <description>Wireless Headphones, Noise Cancelling</description>
+        <display_under>Headphone</display_under>
+        <discounAmt>0.0</discounAmt>
+        <rebateAmt>0.0</rebateAmt>
+        <accessories>
+            <accessory>
+                <aimageUrl>images/E2.jpg</aimageUrl>
+                <aname>Bose</aname>
+                <aId>HAD010</aId>
+                <aprice>25</aprice>
+                <adescription>Headphone hanger</adescription>
+            </accessory>
+            <accessory>
+                <aimageUrl>images/E3.jpg</aimageUrl>
+                <aname>Bose</aname>
+                <aId>HAD011</aId>
+                <aprice>19</aprice>
+                <adescription>Headphone stand</adescription>
+            </accessory>
+            <accessory>
+                <aimageUrl>images/E6.jpg</aimageUrl>
+                <aname>Bose</aname>
+                <aId>HAD012</aId>
+                <aprice>14</aprice>
+                <adescription>Headphone connector</adescription>
+            </accessory>
+        </accessories>
+    </product>
+    <product id="HAD98">
+        <imageUrl>images/Sony I98.jpg</imageUrl>
+        <name>Sony I98</name>
+        <price>149</price>
+        <quantity>220</quantity>
+        <description>Sony MDRZX110 ZX Series Stereo Headphones-Black</description>
+        <display_under>Headphone</display_under>
+        <discounAmt>0.0</discounAmt>
+        <rebateAmt>0.0</rebateAmt>
+        <accessories>
+            <accessory>
+                <aimageUrl>images/E2.jpg</aimageUrl>
+                <aname>Sony</aname>
+                <aId>HAD010</aId>
+                <aprice>25</aprice>
+                <adescription>Headphone hanger</adescription>
+            </accessory>
+            <accessory>
+                <aimageUrl>images/E3.jpg</aimageUrl>
+                <aname>Sony</aname>
+                <aId>HAD011</aId>
+                <aprice>19</aprice>
+                <adescription>Headphone stand</adescription>
+            </accessory>
+            <accessory>
+                <aimageUrl>images/E6.jpg</aimageUrl>
+                <aname>Sony</aname>
+                <aId>HAD012</aId>
+                <aprice>14</aprice>
+                <adescription>Headphone connector</adescription>
+            </accessory>
+        </accessories>
+    </product>
+    <product id="HAD99">
+        <imageUrl>images/Beat.jpg</imageUrl>
+        <name>Beat</name>
+        <price>999</price>
+        <quantity>170</quantity>
+        <description>By Dr Dre Ibeats in Ear Headphones Earphones Black, These in-ear headphones incorporate driver
+        </description>
+        <display_under>Headphone</display_under>
+        <discounAmt>0.0</discounAmt>
+        <rebateAmt>0.0</rebateAmt>
+        <accessories>
+            <accessory>
+                <aimageUrl>images/E2.jpg</aimageUrl>
+                <aname>Beat</aname>
+                <aId>HAD010</aId>
+                <aprice>25</aprice>
+                <adescription>Headphone hanger</adescription>
+            </accessory>
+            <accessory>
+                <aimageUrl>images/E3.jpg</aimageUrl>
+                <aname>Beat</aname>
+                <aId>HAD011</aId>
+                <aprice>19</aprice>
+                <adescription>Headphone stand</adescription>
+            </accessory>
+            <accessory>
+                <aimageUrl>images/E6.jpg</aimageUrl>
+                <aname>Beat</aname>
+                <aId>HAD012</aId>
+                <aprice>14</aprice>
+                <adescription>Headphone connector</adescription>
+            </accessory>
+        </accessories>
+    </product>
+    <product id="HAD90">
+        <imageUrl>images/Skullcandy P3.jpg</imageUrl>
+        <name>Skullcandy P3</name>
+        <price>99</price>
+        <quantity>176</quantity>
+        <description>Widely Celebrated Acoustics</description>
+        <display_under>Headphone</display_under>
+        <discounAmt>0.0</discounAmt>
+        <rebateAmt>0.0</rebateAmt>
+        <accessories>
+            <accessory>
+                <aimageUrl>images/E2.jpg</aimageUrl>
+                <aname>Skullcandy</aname>
+                <aId>HAD010</aId>
+                <aprice>25</aprice>
+                <adescription>Headphone hanger</adescription>
+            </accessory>
+            <accessory>
+                <aimageUrl>images/E3.jpg</aimageUrl>
+                <aname>Skullcandy</aname>
+                <aId>HAD011</aId>
+                <aprice>19</aprice>
+                <adescription>Headphone stand</adescription>
+            </accessory>
+            <accessory>
+                <aimageUrl>images/E6.jpg</aimageUrl>
+                <aname>Skullcandy</aname>
+                <aId>HAD012</aId>
+                <aprice>14</aprice>
+                <adescription>Headphone connector</adescription>
+            </accessory>
+        </accessories>
+    </product>
+
+    <product id="LAP91">
+        <imageUrl>images/HP X360.jpg</imageUrl>
+        <name>HP X360</name>
+        <price>1499</price>
+        <quantity>100</quantity>
+        <description>Full HD Touchscreen 2-in-1 Convertible Laptop PC 7th Gen Intel Core i5-7200U 8GB DDR3 RAM 15.6 inch
+            1920 x 1080 (FHD) IPS UWVA WLED-Backlit Edge-to-Edge Glass Touchscreen
+        </description>
+        <display_under>Laptop</display_under>
+        <discounAmt>20.0</discounAmt>
+        <rebateAmt>0.0</rebateAmt>
+        <accessories>
+            <accessory>
+                <aimageUrl>images/L1.jpg</aimageUrl>
+                <aname>Lenovo</aname>
+                <aId>L2221</aId>
+                <aprice>54</aprice>
+                <adescription>Laptop cooler</adescription>
+            </accessory>
+            <accessory>
+                <aimageUrl>images/L2.jpg</aimageUrl>
+                <aname>Lenovo</aname>
+                <aId>L2222</aId>
+                <aprice>14</aprice>
+                <adescription>Multiple USB connector</adescription>
+            </accessory>
+            <accessory>
+                <aimageUrl>images/L3.jpg</aimageUrl>
+                <aname>Lenovo</aname>
+                <aId>L2223</aId>
+                <aprice>34</aprice>
+                <adescription>Bluetooth Mouse</adescription>
+            </accessory>
+            <accessory>
+                <aimageUrl>images/L4.jpg</aimageUrl>
+                <aname>Lenovo</aname>
+                <aId>L2224</aId>
+                <aprice>44</aprice>
+                <adescription>Laptop cooler</adescription>
+            </accessory>
+        </accessories>
+    </product>
+    <product id="LAP92">
+        <imageUrl>images/Lenovo Yoga 720.jpg</imageUrl>
+        <name>Lenovo Yoga 720</name>
+        <price>1279</price>
+        <quantity>140</quantity>
+        <description>FHD IPS Touch-Screen Ultrabook Windows Ink-Windows10 7th Generation Intel Core i5-7200U Dual-Core
+            Processor 2.5 GHz Best Design Also it is one among the costliest laptops
+        </description>
+        <display_under>Laptop</display_under>
+        <discounAmt>0.0</discounAmt>
+        <rebateAmt>0.0</rebateAmt>
+        <accessories>
+            <accessory>
+                <aimageUrl>images/L1.jpg</aimageUrl>
+                <aname>Asus</aname>
+                <aId>L2221</aId>
+                <aprice>54</aprice>
+                <adescription>Laptop cooler</adescription>
+            </accessory>
+            <accessory>
+                <aimageUrl>images/L2.jpg</aimageUrl>
+                <aname>Asus</aname>
+                <aId>L2222</aId>
+                <aprice>14</aprice>
+                <adescription>Multiple USB connector</adescription>
+            </accessory>
+            <accessory>
+                <aimageUrl>images/L3.jpg</aimageUrl>
+                <aname>Asus</aname>
+                <aId>L2223</aId>
+                <aprice>34</aprice>
+                <adescription>Bluetooth Mouse</adescription>
+            </accessory>
+            <accessory>
+                <aimageUrl>images/L4.jpg</aimageUrl>
+                <aname>Asus</aname>
+                <aId>L2224</aId>
+                <aprice>44</aprice>
+                <adescription>Laptop cooler</adescription>
+            </accessory>
+        </accessories>
+    </product>
+    <product id="LAP93">
+        <imageUrl>images/Microsoft Surface Book.jpg</imageUrl>
+        <name>Microsoft Surface Book</name>
+        <price>999</price>
+        <quantity>160</quantity>
+        <description>512 GB, 16 GB RAM, Intel Core i7 NVIDIA GeForce graphics Windows 10 Pro operating system Surface
+            Pen included 16 GB LPDDR3 2.6 GHz Core M Family
+        </description>
+        <display_under>Laptop</display_under>
+        <discounAmt>0.0</discounAmt>
+        <rebateAmt>0.0</rebateAmt>
+        <accessories>
+            <accessory>
+                <aimageUrl>images/L1.jpg</aimageUrl>
+                <aname>Asus</aname>
+                <aId>L2221</aId>
+                <aprice>54</aprice>
+                <adescription>Laptop cooler</adescription>
+            </accessory>
+            <accessory>
+                <aimageUrl>images/L2.jpg</aimageUrl>
+                <aname>Asus</aname>
+                <aId>L2222</aId>
+                <aprice>14</aprice>
+                <adescription>Multiple USB connector</adescription>
+            </accessory>
+            <accessory>
+                <aimageUrl>images/L3.jpg</aimageUrl>
+                <aname>Asus</aname>
+                <aId>L2223</aId>
+                <aprice>34</aprice>
+                <adescription>Bluetooth Mouse</adescription>
+            </accessory>
+            <accessory>
+                <aimageUrl>images/L4.jpg</aimageUrl>
+                <aname>Asus</aname>
+                <aId>L2224</aId>
+                <aprice>44</aprice>
+                <adescription>Laptop cooler</adescription>
+            </accessory>
+        </accessories>
+    </product>
+    <product id="LAP94">
+        <imageUrl>images/ASUS ZenBook UX330UA-AH54.jpg</imageUrl>
+        <name>ASUS ZenBook UX330UA-AH54</name>
+        <price>349</price>
+        <quantity>170</quantity>
+        <description>Harman Kardon Audio, 13.3-inch LCD Ultra-Slim Laptop Backlit keyboard Core i5 Processor, 8GB DDR3,
+            256GB SSD, Windows 10
+        </description>
+        <display_under>Laptop</display_under>
+        <discounAmt>20.0</discounAmt>
+        <rebateAmt>0.0</rebateAmt>
+        <accessories>
+            <accessory>
+                <aimageUrl>images/lapacc4.jpg</aimageUrl>
+                <aname>HP</aname>
+                <aId>L2224</aId>
+                <aprice>20</aprice>
+                <adescription>Laptop Sleeve</adescription>
+            </accessory>
+        </accessories>
+    </product>
+    <product id="LAP95">
+        <imageUrl>images/Acer Chromebook R 11.jpg</imageUrl>
+        <name>Acer Chromebook R 11</name>
+        <price>529</price>
+        <quantity>180</quantity>
+        <description>11.6-Inch HD Touch Intel Celeron N3150, Intel Celeron N3150 Quad-Core Processor 1.6GHz Intel Burst
+            Technology up to 2.08GHz Chrome OS™,Graphics : Intel® HD Graphics,DDR3L Shared graphics memory
+        </description>
+        <display_under>Laptop</display_under>
+        <discounAmt>0.0</discounAmt>
+        <rebateAmt>0.0</rebateAmt>
+        <accessories>
+            <accessory>
+                <aimageUrl>images/lapacc5.jpg</aimageUrl>
+                <aname>Dell</aname>
+                <aId>L2225</aId>
+                <aprice>39</aprice>
+                <adescription>Cooling System</adescription>
+            </accessory>
+        </accessories>
+    </product>
+    <product id="LAP96">
+        <imageUrl>images/Samsung Chromebook 3.jpg</imageUrl>
+        <name>Samsung Chromebook 3</name>
+        <price>429</price>
+        <quantity>190</quantity>
+        <description>11.6-Inches, 4GB RAM, 16GB eMMC with touch Screen, Samsung comes with a beautiful Curved design
+            Also it is one among the cheapest laptops
+        </description>
+        <display_under>Laptop</display_under>
+        <discounAmt>20.0</discounAmt>
+        <rebateAmt>0.0</rebateAmt>
+        <accessories>
+            <accessory>
+                <aimageUrl>images/lapacc1.jpg</aimageUrl>
+                <aname>Lenovo</aname>
+                <aId>L2221</aId>
+                <aprice>44</aprice>
+                <adescription>AC Power Adaopter</adescription>
+            </accessory>
+        </accessories>
+    </product>
+    <product id="LAP97">
+        <imageUrl>images/Apple 15inch MacBook Pro.jpg</imageUrl>
+        <name>Apple 15inch MacBook Pro</name>
+        <price>1867</price>
+        <quantity>180</quantity>
+        <description>Retina, Touch Bar with touch Screen, 2.8GHz Intel Core i7 Quad Core Curved design Radeon Pro 555
+            with 2GB memory, Touch Bar and Touch ID
+        </description>
+        <display_under>Laptop</display_under>
+        <discounAmt>20.0</discounAmt>
+        <rebateAmt>0.0</rebateAmt>
+        <accessories>
+            <accessory>
+                <aimageUrl>images/lapacc1.jpg</aimageUrl>
+                <aname>Lenovo</aname>
+                <aId>L2221</aId>
+                <aprice>44</aprice>
+                <adescription>AC Power Adaopter</adescription>
+            </accessory>
+        </accessories>
+    </product>
+    <product id="LAP98">
+        <imageUrl>images/ASUS Chromebook.jpg</imageUrl>
+        <name>ASUS Chromebook</name>
+        <price>329</price>
+        <quantity>115</quantity>
+        <description>Stream laptop 15 incheswith touch Screen More productive Windows 10 is the best for bringing ideas
+            forward and getting things done
+        </description>
+        <display_under>Laptop</display_under>
+        <discounAmt>20.0</discounAmt>
+        <rebateAmt>0.0</rebateAmt>
+        <accessories>
+            <accessory>
+                <aimageUrl>images/lapacc1.jpg</aimageUrl>
+                <aname>Lenovo</aname>
+                <aId>L2221</aId>
+                <aprice>44</aprice>
+                <adescription>AC Power Adaopter</adescription>
+            </accessory>
+        </accessories>
+    </product>
+    <product id="LAP99">
+        <imageUrl>images/Apple MacBook Air.jpg</imageUrl>
+        <name>Apple MacBook Air</name>
+        <price>1929</price>
+        <quantity>116</quantity>
+        <description>Stream laptop 15 incheswith touch Screen More productive Windows 10 is the best for bringing ideas
+            forward and getting things done
+        </description>
+        <display_under>Laptop</display_under>
+        <discounAmt>20.0</discounAmt>
+        <rebateAmt>0.0</rebateAmt>
+        <accessories>
+            <accessory>
+                <aimageUrl>images/lapacc1.jpg</aimageUrl>
+                <aname>Lenovo</aname>
+                <aId>L2221</aId>
+                <aprice>44</aprice>
+                <adescription>AC Power Adaopter</adescription>
+            </accessory>
+        </accessories>
+    </product>
+    <product id="SMP91">
+        <imageUrl>images/Huawei P10.jpg</imageUrl>
+        <name>Huawei P10</name>
+        <price>549</price>
+        <quantity>187</quantity>
+        <description>with Finger Print Sensor and 1080p high definition LCD displaywith HiSilicon Kirin 960 chipset,
+            Dual 20 MP + 12 MP primary camera
+        </description>
+        <display_under>Smart Phones</display_under>
+        <discounAmt>20.0</discounAmt>
+        <rebateAmt>0.0</rebateAmt>
+        <accessories>
+            <accessory>
+                <aimageUrl>images/spacc1.jpg</aimageUrl>
+                <aname>Apple</aname>
+                <aId>S2221</aId>
+                <aprice>29</aprice>
+                <adescription>Ear Pods</adescription>
+            </accessory>
+            <accessory>
+                <aimageUrl>images/spacc2.jpg</aimageUrl>
+                <aname>Apple</aname>
+                <aId>S2222</aId>
+                <aprice>29</aprice>
+                <adescription>Ear Pods</adescription>
+            </accessory>
+        </accessories>
+    </product>
+    <product id="SMP92">
+        <imageUrl>images/Apple IphoneX.jpg</imageUrl>
+        <name>Apple IphoneX</name>
+        <price>699</price>
+        <quantity>195</quantity>
+        <description>Apple comes with a beautiful IP67 certified - dust and water resistant design and IOS 11 · 5.80
+            inch Display
+        </description>
+        <display_under>Smart Phones</display_under>
+        <discounAmt>20.0</discounAmt>
+        <rebateAmt>0.0</rebateAmt>
+        <accessories>
+            <accessory>
+                <aimageUrl>images/spacc2.jpg</aimageUrl>
+                <aname>Samsung</aname>
+                <aId>S2222</aId>
+                <aprice>18</aprice>
+                <adescription>View Case</adescription>
+            </accessory>
+            <accessory>
+                <aimageUrl>images/spacc3.jpg</aimageUrl>
+                <aname>Motorola</aname>
+                <aId>S2223</aId>
+                <aprice>13</aprice>
+                <adescription>Selfie Stick</adescription>
+            </accessory>
+        </accessories>
+    </product>
+    <product id="SMP93">
+        <imageUrl>images/OnePlus 5.jpg</imageUrl>
+        <name>OnePlus 5</name>
+        <price>499</price>
+        <quantity>210</quantity>
+        <description>A 5.5 inches with powerful battery , One plus 3 comes with a beautiful</description>
+        <display_under>Smart Phones</display_under>
+        <discounAmt>0.0</discounAmt>
+        <rebateAmt>0.0</rebateAmt>
+        <accessories>
+            <accessory>
+                <aimageUrl>images/spacc3.jpg</aimageUrl>
+                <aname>Motorola</aname>
+                <aId>S2223</aId>
+                <aprice>13</aprice>
+                <adescription>Selfie Stick</adescription>
+            </accessory>
+            <accessory>
+                <aimageUrl>images/spacc2.jpg</aimageUrl>
+                <aname>Motorola</aname>
+                <aId>S2222</aId>
+                <aprice>13</aprice>
+                <adescription>Selfie Stick</adescription>
+            </accessory>
+        </accessories>
+    </product>
+    <product id="SMP94">
+        <imageUrl>images/Sony Xperia XZ.jpg</imageUrl>
+        <name>Sony Xperia XZ</name>
+        <price>599</price>
+        <quantity>165</quantity>
+        <description>Android Nougat OS · 5.50 inch Display The Power to Capture Every Moment. The smartphone camera with
+            advanced movement and color capture
+        </description>
+        <display_under>Smart Phones</display_under>
+        <discounAmt>20.0</discounAmt>
+        <rebateAmt>0.0</rebateAmt>
+        <accessories>
+            <accessory>
+                <aimageUrl>images/spacc4.jpg</aimageUrl>
+                <aname>LG</aname>
+                <aId>S2224</aId>
+                <aprice>229</aprice>
+                <adescription>Beats Pill+Speakers</adescription>
+            </accessory>
+            <accessory>
+                <aimageUrl>images/spacc3.jpg</aimageUrl>
+                <aname>Motorola</aname>
+                <aId>S2223</aId>
+                <aprice>13</aprice>
+                <adescription>Selfie Stick</adescription>
+            </accessory>
+        </accessories>
+    </product>
+    <product id="SMP95">
+        <imageUrl>images/Moto G.jpg</imageUrl>
+        <name>Moto G</name>
+        <price>299</price>
+        <quantity>155</quantity>
+        <description>10 4G Lite 32GB, Listen to music, movies and games in total privacy Design that delivers high
+            availability, scalability
+        </description>
+        <display_under>Smart Phones</display_under>
+        <discounAmt>20.0</discounAmt>
+        <rebateAmt>0.0</rebateAmt>
+        <accessories>
+            <accessory>
+                <aimageUrl>images/spacc5.jpg</aimageUrl>
+                <aname>HTC</aname>
+                <aId>S2225</aId>
+                <aprice>29</aprice>
+                <adescription>Vehicle Charger</adescription>
+            </accessory>
+            <accessory>
+                <aimageUrl>images/spacc3.jpg</aimageUrl>
+                <aname>Motorola</aname>
+                <aId>S2223</aId>
+                <aprice>13</aprice>
+                <adescription>Selfie Stick</adescription>
+            </accessory>
+        </accessories>
+    </product>
+    <product id="SMP96">
+        <imageUrl>images/Intex Aqua.jpg</imageUrl>
+        <name>Intex Aqua</name>
+        <price>199</price>
+        <quantity>145</quantity>
+        <description>Unlocked Cell Phones - Dual Sim Smartphone With 5.0, IPS Display - Android 6.0 - 8GB ROM - 2MP+5MP
+            Dual Camera
+        </description>
+        <display_under>Smart Phones</display_under>
+        <discounAmt>20.0</discounAmt>
+        <rebateAmt>0.0</rebateAmt>
+        <accessories>
+            <accessory>
+                <aimageUrl>images/spacc5.jpg</aimageUrl>
+                <aname>HTC</aname>
+                <aId>S2225</aId>
+                <aprice>29</aprice>
+                <adescription>Vehicle Charger</adescription>
+            </accessory>
+            <accessory>
+                <aimageUrl>images/spacc3.jpg</aimageUrl>
+                <aname>Motorola</aname>
+                <aId>S2223</aId>
+                <aprice>13</aprice>
+                <adescription>Selfie Stick</adescription>
+            </accessory>
+        </accessories>
+    </product>
+    <product id="SMP97">
+        <imageUrl>images/Htc U11.jpg</imageUrl>
+        <name>Htc U11</name>
+        <price>499</price>
+        <quantity>175</quantity>
+        <description>HTC U11 packs a 12-Ultrapixel primary camera on the rear and a 16-megapixel front shooter for
+            selfies
+        </description>
+        <display_under>Smart Phones</display_under>
+        <discounAmt>20.0</discounAmt>
+        <rebateAmt>0.0</rebateAmt>
+        <accessories>
+            <accessory>
+                <aimageUrl>images/spacc5.jpg</aimageUrl>
+                <aname>HTC</aname>
+                <aId>S2225</aId>
+                <aprice>29</aprice>
+                <adescription>Vehicle Charger</adescription>
+            </accessory>
+            <accessory>
+                <aimageUrl>images/spacc3.jpg</aimageUrl>
+                <aname>Motorola</aname>
+                <aId>S2223</aId>
+                <aprice>13</aprice>
+                <adescription>Selfie Stick</adescription>
+            </accessory>
+        </accessories>
+    </product>
+    <product id="SMP98">
+        <imageUrl>images/Nokia 8.jpg</imageUrl>
+        <name>Nokia 8</name>
+        <price>699</price>
+        <quantity>185</quantity>
+        <description>Unlocked Cell Phones - Dual Sim Smartphone With 5.0, IPS Display - Android 6.0 - 8GB ROM - 2MP+5MP
+            Dual Camera
+        </description>
+        <display_under>Smart Phones</display_under>
+        <discounAmt>20.0</discounAmt>
+        <rebateAmt>0.0</rebateAmt>
+        <accessories>
+            <accessory>
+                <aimageUrl>images/spacc5.jpg</aimageUrl>
+                <aname>HTC</aname>
+                <aId>S2225</aId>
+                <aprice>29</aprice>
+                <adescription>Vehicle Charger</adescription>
+            </accessory>
+            <accessory>
+                <aimageUrl>images/spacc3.jpg</aimageUrl>
+                <aname>Motorola</aname>
+                <aId>S2223</aId>
+                <aprice>13</aprice>
+                <adescription>Selfie Stick</adescription>
+            </accessory>
+        </accessories>
+    </product>
+    <product id="SMP99">
+        <imageUrl>images/Samsung Note 8.jpg</imageUrl>
+        <name>Samsung Note 8</name>
+        <price>699</price>
+        <quantity>194</quantity>
+        <description>Unlocked Cell Phones - Dual Sim Smartphone With 5.0, IPS Display - Android 6.0 - 8GB ROM -
+            12MP+12MP Dual Camera
+        </description>
+        <display_under>Smart Phones</display_under>
+        <discounAmt>20.0</discounAmt>
+        <rebateAmt>0.0</rebateAmt>
+        <accessories>
+            <accessory>
+                <aimageUrl>images/spacc5.jpg</aimageUrl>
+                <aname>HTC</aname>
+                <aId>S2225</aId>
+                <aprice>29</aprice>
+                <adescription>Vehicle Charger</adescription>
+            </accessory>
+            <accessory>
+                <aimageUrl>images/spacc3.jpg</aimageUrl>
+                <aname>Motorola</aname>
+                <aId>S2223</aId>
+                <aprice>13</aprice>
+                <adescription>Selfie Stick</adescription>
+            </accessory>
+        </accessories>
+    </product>
+    <product id="SMP90">
+        <imageUrl>images/Asus Zenfone 4pro.jpg</imageUrl>
+        <name>Asus Zenfone 4pro</name>
+        <price>179</price>
+        <quantity>188</quantity>
+        <description>Unlocked Cell Phones - Dual Sim Smartphone With 5.0, IPS Display - Android 7.0 Noughat - 2GB ROM -
+            2MP+5MP Dual Camera
+        </description>
+        <display_under>Smart Phones</display_under>
+        <discounAmt>20.0</discounAmt>
+        <rebateAmt>0.0</rebateAmt>
+        <accessories>
+            <accessory>
+                <aimageUrl>images/spacc5.jpg</aimageUrl>
+                <aname>HTC</aname>
+                <aId>S2225</aId>
+                <aprice>29</aprice>
+                <adescription>Vehicle Charger</adescription>
+            </accessory>
+        </accessories>
+    </product>
+
+    <product id="SPE91">
+        <imageUrl>images/ELAC Uni-fi.jpg</imageUrl>
+        <name>ELAC Uni-fi</name>
+        <price>499</price>
+        <quantity>156</quantity>
+        <description>Perfect On-Ear Stereo Speakers RP-HT2 SoundCore Bluetooth Speaker with 24-Hour Playtime, Compatible
+            with all Bluetooth-enabled devices
+        </description>
+        <display_under>Speaker</display_under>
+        <discounAmt>0.0</discounAmt>
+        <rebateAmt>0.0</rebateAmt>
+        <accessories>
+            <accessory>
+                <aimageUrl>images/tabacc1.jpg</aimageUrl>
+                <aname>Amazon</aname>
+                <aId>T2221</aId>
+                <aprice>29</aprice>
+                <adescription>HDMI Adapter</adescription>
+            </accessory>
+        </accessories>
+    </product>
+    <product id="SPE92">
+        <imageUrl>images/Bose Lifestyle 650.jpg</imageUrl>
+        <name>Bose Lifestyle 650</name>
+        <price>999</price>
+        <quantity>176</quantity>
+        <description>Wireless Speakers, Noise Cancelling, SoundCore Bluetooth Speaker with 24-Hour Playtime, Compatible
+            with all Bluetooth-enabled devices
+        </description>
+        <display_under>Speaker</display_under>
+        <discounAmt>0.0</discounAmt>
+        <rebateAmt>0.0</rebateAmt>
+        <accessories>
+            <accessory>
+                <aimageUrl>images/tabacc2.jpg</aimageUrl>
+                <aname>Samsung</aname>
+                <aId>T2222</aId>
+                <aprice>19</aprice>
+                <adescription>Stereo Auxiliary Cable</adescription>
+            </accessory>
+        </accessories>
+    </product>
+    <product id="SPE93">
+        <imageUrl>images/Sony BDVE3100.jpg</imageUrl>
+        <name>Sony BDVE3100</name>
+        <price>149</price>
+        <quantity>185</quantity>
+        <description>Sony MDRZX110 ZX Series Stereo Speakers, SoundCore Bluetooth Speaker with 24-Hour Playtime,
+            Compatible with all Bluetooth-enabled devices
+        </description>
+        <display_under>Speaker</display_under>
+        <discounAmt>0.0</discounAmt>
+        <rebateAmt>0.0</rebateAmt>
+        <accessories>
+            <accessory>
+                <aimageUrl>images/tabacc3.jpg</aimageUrl>
+                <aname>Samsung</aname>
+                <aId>T2223</aId>
+                <aprice>9</aprice>
+                <adescription>Slim Stylus</adescription>
+            </accessory>
+        </accessories>
+    </product>
+    <product id="SPE94">
+        <imageUrl>images/Bang Olufsen BeoSound 2.jpg</imageUrl>
+        <name>Bang Olufsen BeoSound 2</name>
+        <price>1999</price>
+        <quantity>210</quantity>
+        <description>Home Wireless Music Speaker System, 360º sound: The conical speaker body creates a 360-degree sound
+            image Also it is one among the costliest Speakers
+        </description>
+        <display_under>Speaker</display_under>
+        <discounAmt>0.0</discounAmt>
+        <rebateAmt>0.0</rebateAmt>
+        <accessories>
+            <accessory>
+                <aimageUrl>images/tabacc4.jpg</aimageUrl>
+                <aname>Microsoft</aname>
+                <aId>T2224</aId>
+                <aprice>39</aprice>
+                <adescription>Glass Screen Shield</adescription>
+            </accessory>
+        </accessories>
+    </product>
+    <product id="SPE95">
+        <imageUrl>images/Samsung HT-J4500.jpg</imageUrl>
+        <name>Samsung HT-J4500</name>
+        <price>199</price>
+        <quantity>215</quantity>
+        <description>Widely Celebrated Acoustics, Bluetooth Speaker with 24-Hour Playtime, Compatible with all
+            Bluetooth-enabled devices
+        </description>
+        <display_under>Speaker</display_under>
+        <discounAmt>0.0</discounAmt>
+        <rebateAmt>0.0</rebateAmt>
+        <accessories>
+            <accessory>
+                <aimageUrl>images/tabacc5.jpg</aimageUrl>
+                <aname>Insignia</aname>
+                <aId>T2225</aId>
+                <aprice>29</aprice>
+                <adescription>Folio Case</adescription>
+            </accessory>
+        </accessories>
+    </product>
+    <product id="SPE96">
+        <imageUrl>images/LG Electronics CM4360.jpg</imageUrl>
+        <name>LG Electronics CM4360</name>
+        <price>298</price>
+        <quantity>220</quantity>
+        <description>5.1 Channel Home Theater System, Built-in Wi-Fi: Stream Netflix, HuluPlus, Pandora more Full range
+            bass reflex speaker system
+        </description>
+        <display_under>Speaker</display_under>
+        <discounAmt>0.0</discounAmt>
+        <rebateAmt>0.0</rebateAmt>
+        <accessories>
+            <accessory>
+                <aimageUrl>images/tabacc1.jpg</aimageUrl>
+                <aname>Amazon</aname>
+                <aId>T2221</aId>
+                <aprice>29</aprice>
+                <adescription>HDMI Adapter</adescription>
+            </accessory>
+        </accessories>
+    </product>
+    <product id="SPE97">
+        <imageUrl>images/Pioneer.jpg</imageUrl>
+        <name>Pioneer</name>
+        <price>199</price>
+        <quantity>120</quantity>
+        <description>230W Hi-Fi Entertainment System, Bluetooth Connectivity; CD Player USB Direct Recording Refurbished
+            and 2016 Model
+        </description>
+        <display_under>Speaker</display_under>
+        <discounAmt>0.0</discounAmt>
+        <rebateAmt>0.0</rebateAmt>
+        <accessories>
+            <accessory>
+                <aimageUrl>images/tabacc2.jpg</aimageUrl>
+                <aname>Samsung</aname>
+                <aId>T2222</aId>
+                <aprice>19</aprice>
+                <adescription>Stereo Auxiliary Cable</adescription>
+            </accessory>
+        </accessories>
+    </product>
+    <product id="SPE98">
+        <imageUrl>images/JBL Flip 3.jpg</imageUrl>
+        <name>JBL Flip 3</name>
+        <price>149</price>
+        <quantity>180</quantity>
+        <description>Splashproof Portable Bluetooth Speaker Black 3000mAH Rechargeable Battery Built-in rechargeable
+            Li-ion battery multiple JBL Connect enabled speakers
+        </description>
+        <display_under>Speaker</display_under>
+        <discounAmt>0.0</discounAmt>
+        <rebateAmt>0.0</rebateAmt>
+        <accessories>
+            <accessory>
+                <aimageUrl>images/tabacc3.jpg</aimageUrl>
+                <aname>Samsung</aname>
+                <aId>T2223</aId>
+                <aprice>9</aprice>
+                <adescription>Slim Stylus</adescription>
+            </accessory>
+        </accessories>
+    </product>
+    <product id="SPE99">
+        <imageUrl>images/Edifier R1850DB.jpg</imageUrl>
+        <name>Edifier R1850DB</name>
+        <price>999</price>
+        <quantity>190</quantity>
+        <description>Active Bookshelf Speakers Bluetooth and Optical Input 2.0 Studio Monitor Speaker Best design
+            Built-in Amplifier with Subwoofer Line Out
+        </description>
+        <display_under>Speaker</display_under>
+        <discounAmt>0.0</discounAmt>
+        <rebateAmt>0.0</rebateAmt>
+        <accessories>
+            <accessory>
+                <aimageUrl>images/tabacc4.jpg</aimageUrl>
+                <aname>Microsoft</aname>
+                <aId>T2224</aId>
+                <aprice>39</aprice>
+                <adescription>Glass Screen Shield</adescription>
+            </accessory>
+        </accessories>
+    </product>
+    <product id="SPE90">
+        <imageUrl>images/NHT C Series C-3.jpg</imageUrl>
+        <name>NHT C Series C-3</name>
+        <price>99</price>
+        <quantity>220</quantity>
+        <description>Intex 51 inches3-Way Bookshelf Speaker High Gloss Black, Combine with other NHT C-Series components
+            Curved design C-3 is sturdier and more serviceable
+        </description>
+        <display_under>Speaker</display_under>
+        <discounAmt>0.0</discounAmt>
+        <rebateAmt>0.0</rebateAmt>
+        <accessories>
+            <accessory>
+                <aimageUrl>images/tabacc5.jpg</aimageUrl>
+                <aname>Insignia</aname>
+                <aId>T2225</aId>
+                <aprice>29</aprice>
+                <adescription>Folio Case</adescription>
+            </accessory>
+        </accessories>
+    </product>
+    <product id="PEN90">
+        <imageUrl>images/pen3.jpg</imageUrl>
+        <name>Samsung</name>
+        <price>99</price>
+        <quantity>120</quantity>
+        <description>32GB BAR (METAL) USB 3.0 Flash Drive MUF-32BA</description>
+        <display_under>Pendrive</display_under>
+        <discounAmt>0.0</discounAmt>
+        <rebateAmt>0.0</rebateAmt>
+        <accessories>
+            <accessory>
+                <aimageUrl>images/tabacc5.jpg</aimageUrl>
+                <aname>Insignia</aname>
+                <aId>T2225</aId>
+                <aprice>29</aprice>
+                <adescription>Folio Case</adescription>
+            </accessory>
+        </accessories>
+    </product>
+    <product id="PEN91">
+        <imageUrl>images/pen1.jpg</imageUrl>
+        <name>Sandisk</name>
+        <price>99</price>
+        <quantity>180</quantity>
+        <description>16GB BAR (METAL) USB 3.0 Flash Drive MUF-32BA</description>
+        <display_under>Pendrive</display_under>
+        <discounAmt>0.0</discounAmt>
+        <rebateAmt>0.0</rebateAmt>
+        <accessories>
+            <accessory>
+                <aimageUrl>images/tabacc5.jpg</aimageUrl>
+                <aname>Insignia</aname>
+                <aId>T2225</aId>
+                <aprice>29</aprice>
+                <adescription>Folio Case</adescription>
+            </accessory>
+        </accessories>
+    </product>
+    <product id="PEN92">
+        <imageUrl>images/pen2.jpg</imageUrl>
+        <name>Sandisk</name>
+        <price>99</price>
+        <quantity>190</quantity>
+        <description>8GB BAR (METAL) USB 3.0 Flash Drive MUF-32BA</description>
+        <display_under>Pendrive</display_under>
+        <discounAmt>0.0</discounAmt>
+        <rebateAmt>0.0</rebateAmt>
+        <accessories>
+            <accessory>
+                <aimageUrl>images/tabacc5.jpg</aimageUrl>
+                <aname>Insignia</aname>
+                <aId>T2225</aId>
+                <aprice>29</aprice>
+                <adescription>Folio Case</adescription>
+            </accessory>
+        </accessories>
+    </product>
+    <product id="MEM91">
+        <imageUrl>images/mem1.jpg</imageUrl>
+        <name>Sandisk</name>
+        <price>99</price>
+        <quantity>190</quantity>
+        <description>8GB Memory card</description>
+        <display_under>memory</display_under>
+        <discounAmt>0.0</discounAmt>
+        <rebateAmt>0.0</rebateAmt>
+        <accessories>
+            <accessory>
+                <aimageUrl>images/tabacc5.jpg</aimageUrl>
+                <aname>Insignia</aname>
+                <aId>T2225</aId>
+                <aprice>29</aprice>
+                <adescription>Folio Case</adescription>
+            </accessory>
+        </accessories>
+    </product>
+    <product id="MEM92">
+        <imageUrl>images/mem2.jpg</imageUrl>
+        <name>Olympus</name>
+        <price>99</price>
+        <quantity>195</quantity>
+        <description>16GB Memory card</description>
+        <display_under>memory</display_under>
+        <discounAmt>0.0</discounAmt>
+        <rebateAmt>0.0</rebateAmt>
+        <accessories>
+            <accessory>
+                <aimageUrl>images/tabacc5.jpg</aimageUrl>
+                <aname>Insignia</aname>
+                <aId>T2225</aId>
+                <aprice>29</aprice>
+                <adescription>Folio Case</adescription>
+            </accessory>
+        </accessories>
+    </product>
+    <product id="MEM93">
+        <imageUrl>images/mem3.jpg</imageUrl>
+        <name>Sandisk</name>
+        <price>99</price>
+        <quantity>200</quantity>
+        <description>32GB Memory card</description>
+        <display_under>memory</display_under>
+        <discounAmt>0.0</discounAmt>
+        <rebateAmt>0.0</rebateAmt>
+        <accessories>
+            <accessory>
+                <aimageUrl>images/tabacc5.jpg</aimageUrl>
+                <aname>Insignia</aname>
+                <aId>T2225</aId>
+                <aprice>29</aprice>
+                <adescription>Folio Case</adescription>
+            </accessory>
+        </accessories>
+    </product>
+    <product id="HD91">
+        <imageUrl>images/hd1.jpg</imageUrl>
+        <name>Seagate</name>
+        <price>99</price>
+        <quantity>210</quantity>
+        <description>1TB Memory Hard Disk</description>
+        <display_under>storage</display_under>
+        <discounAmt>0.0</discounAmt>
+        <rebateAmt>0.0</rebateAmt>
+        <accessories>
+            <accessory>
+                <aimageUrl>images/tabacc5.jpg</aimageUrl>
+                <aname>Insignia</aname>
+                <aId>T2225</aId>
+                <aprice>29</aprice>
+                <adescription>Folio Case</adescription>
+            </accessory>
+        </accessories>
+    </product>
+    <product id="HD92">
+        <imageUrl>images/hd2.jpg</imageUrl>
+        <name>Samsung</name>
+        <price>99</price>
+        <quantity>250</quantity>
+        <description>10TB Memory Hard Disk</description>
+        <display_under>storage</display_under>
+        <discounAmt>0.0</discounAmt>
+        <rebateAmt>0.0</rebateAmt>
+        <accessories>
+            <accessory>
+                <aimageUrl>images/tabacc5.jpg</aimageUrl>
+                <aname>Insignia</aname>
+                <aId>T2225</aId>
+                <aprice>29</aprice>
+                <adescription>Folio Case</adescription>
+            </accessory>
+        </accessories>
+    </product>
+    <product id="HD93">
+        <imageUrl>images/hd3.jpg</imageUrl>
+        <name>Thosiba</name>
+        <price>99</price>
+        <quantity>180</quantity>
+        <description>4TB Memory Hard Disk</description>
+        <display_under>storage</display_under>
+        <discounAmt>0.0</discounAmt>
+        <rebateAmt>0.0</rebateAmt>
+        <accessories>
+            <accessory>
+                <aimageUrl>images/tabacc5.jpg</aimageUrl>
+                <aname>Insignia</aname>
+                <aId>T2225</aId>
+                <aprice>29</aprice>
+                <adescription>Folio Case</adescription>
+            </accessory>
+        </accessories>
+    </product>
+    <product id="HD94">
+        <imageUrl>images/hd4.jpg</imageUrl>
+        <name>WD</name>
+        <price>99</price>
+        <quantity>210</quantity>
+        <description>2TB Memory Hard Disk</description>
+        <display_under>storage</display_under>
+        <discounAmt>0.0</discounAmt>
+        <rebateAmt>0.0</rebateAmt>
+        <accessories>
+            <accessory>
+                <aimageUrl>images/tabacc5.jpg</aimageUrl>
+                <aname>Insignia</aname>
+                <aId>T2225</aId>
+                <aprice>29</aprice>
+                <adescription>Folio Case</adescription>
+            </accessory>
+        </accessories>
+    </product>
+
+
+</ProductCatalog>
