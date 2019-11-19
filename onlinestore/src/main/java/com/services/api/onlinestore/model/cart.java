@@ -1,10 +1,12 @@
 package com.services.api.onlinestore.model;
 
+import lombok.Data;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-
+@Data
 public class cart {
 
 
@@ -15,14 +17,6 @@ public class cart {
         cartItems = new HashMap<String, List<Integer>>();
         cartItemsUrl = new HashMap<String, String>();
 
-    }
-
-    public HashMap getCartItems() {
-        return cartItems;
-    }
-
-    public HashMap getCartItemsUrl() {
-        return cartItemsUrl;
     }
 
     public void addToCartUrl(String itemId, String url) {

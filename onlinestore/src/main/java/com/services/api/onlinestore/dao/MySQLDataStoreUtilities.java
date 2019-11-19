@@ -4,37 +4,42 @@ import com.services.api.onlinestore.model.Accessory;
 import com.services.api.onlinestore.model.Order;
 import com.services.api.onlinestore.model.Product;
 import com.services.api.onlinestore.model.User;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Component;
 
 import java.sql.*;
 import java.util.*;
 
+@Slf4j
+@Component
 public class MySQLDataStoreUtilities {
 
     public static Connection conn = null;
 
-    public static int getConnection() {
-        int i = 0;
+    public int getConnection() {
+        int i = 1;
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
-            conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/smartportables", "root", "root");
+
             if (conn != null) {
-                System.out.println("Connected to the database!");
-                i = 1;
+                log.info("getConnection :: Already Connected to the database!");
             } else {
-                System.out.println("Failed to make connection!");
-                i = 0;
+                conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/smartportables", "root", "root");
+                log.info("getConnection :: Connection established!");
             }
         } catch (SQLException e) {
-            System.err.format("SQL State: %s\n%s", e.getSQLState(), e.getMessage());
+            i = 0;
+            log.info("SQL State: %s\n%s", e.getSQLState(), e.getMessage());
             // conn.close();
         } catch (Exception e) {
+            i = 0;
             e.printStackTrace();
         }
         return i;
     }
 
-    public static int insertProducts(Map<String, Product> p) {
+    public int insertProducts(Map<String, Product> p) {
         try {
             if (getConnection() == 1) {
                 Iterator it = p.entrySet().iterator();
@@ -90,7 +95,7 @@ public class MySQLDataStoreUtilities {
         return 1;
     }
 
-    public static HashMap<String, Product> getProductDetails() {
+    public HashMap<String, Product> getProductDetails() {
         try {
             if (getConnection() == 1) {
                 HashMap<String, Product> ProductDetailsMap = new HashMap<String, Product>();
@@ -150,7 +155,7 @@ public class MySQLDataStoreUtilities {
         }
     }
 
-    public static void insertUser(User user) {
+    public void insertUser(User user) {
         try {
             if (getConnection() == 1) {
                 String insertUser = "INSERT INTO users(firstName,lastName,userId,password,repassword,userType) "
@@ -160,7 +165,7 @@ public class MySQLDataStoreUtilities {
                 pst.setString(2, user.getLastName());
                 pst.setString(3, user.getUserId());
                 pst.setString(4, user.getPassword());
-                pst.setString(5, user.getrePassword());
+                pst.setString(5, user.getRePassword());
                 pst.setString(6, user.getUserType());
                 pst.executeUpdate();
 
@@ -172,7 +177,7 @@ public class MySQLDataStoreUtilities {
         }
     }
 
-    public static HashMap<String, User> getUsers() {
+    public HashMap<String, User> getUsers() {
         try {
             if (getConnection() == 1) {
                 HashMap<String, User> users = new HashMap<String, User>();
@@ -186,7 +191,7 @@ public class MySQLDataStoreUtilities {
                     user.setLastName(rs.getString("lastName"));
                     user.setUserId(rs.getString("userId"));
                     user.setPassword(rs.getString("password"));
-                    user.setrePassword(rs.getString("repassword"));
+                    user.setRePassword(rs.getString("repassword"));
                     user.setUserType(rs.getString("userType"));
 
                     users.put(user.getUserId(), user);
@@ -205,7 +210,7 @@ public class MySQLDataStoreUtilities {
         }
     }
 
-    public static int insertOrderDetails(Order order) {
+    public int insertOrderDetails(Order order) {
         try {
             if (getConnection() == 1) {
 
@@ -238,7 +243,7 @@ public class MySQLDataStoreUtilities {
         }
     }
 
-    public static HashMap<String, ArrayList<Order>> getOrderDetails() {
+    public HashMap<String, ArrayList<Order>> getOrderDetails() {
         try {
             if (getConnection() == 1) {
                 HashMap<String, ArrayList<Order>> orderDetailsMap = new HashMap<String, ArrayList<Order>>();
@@ -288,7 +293,7 @@ public class MySQLDataStoreUtilities {
         }
     }
 
-    public static void cancelOrder(String order_id) {
+    public void cancelOrder(String order_id) {
         try {
             if (getConnection() == 1) {
 
@@ -305,7 +310,7 @@ public class MySQLDataStoreUtilities {
     }
 
     // Returns the Sales per day and date
-    public static HashMap<Object, ArrayList<Integer>> getsalesperday() {
+    public HashMap<Object, ArrayList<Integer>> getsalesperday() {
 
         // ArrayList<Object> a=new ArrayList<Object>();
         HashMap<Object, ArrayList<Integer>> data = new HashMap<Object, ArrayList<Integer>>();
@@ -340,7 +345,7 @@ public class MySQLDataStoreUtilities {
     }
 
     //onSale Products
-    public static HashMap<String, List<Integer>> getOnsaleProducts() {
+    public HashMap<String, List<Integer>> getOnsaleProducts() {
         HashMap<String, List<Integer>> data = new HashMap<String, List<Integer>>();
         try {
             if (getConnection() == 1) {
@@ -371,7 +376,7 @@ public class MySQLDataStoreUtilities {
     }
 
     //Sales Report
-    public static HashMap<String, List<Integer>> getsalesreport() {
+    public HashMap<String, List<Integer>> getsalesreport() {
 
         HashMap<String, List<Integer>> data = new HashMap<String, List<Integer>>();
         try {
@@ -403,7 +408,7 @@ public class MySQLDataStoreUtilities {
     }
 
     //Update Product Quantity in the Table
-    public static void updateProducts(String name, int quant) {
+    public void updateProducts(String name, int quant) {
 
         try {
             if (getConnection() == 1) {
@@ -428,7 +433,7 @@ public class MySQLDataStoreUtilities {
         }
     }
 
-    public static HashMap<String, List<Integer>> getRebatedata() {
+    public HashMap<String, List<Integer>> getRebatedata() {
 
         HashMap<String, List<Integer>> data = new HashMap<String, List<Integer>>();
         try {

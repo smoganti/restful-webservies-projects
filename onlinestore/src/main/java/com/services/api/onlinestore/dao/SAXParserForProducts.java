@@ -2,6 +2,10 @@ package com.services.api.onlinestore.dao;
 
 import com.services.api.onlinestore.model.Accessory;
 import com.services.api.onlinestore.model.Product;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
@@ -13,41 +17,51 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-
+@Slf4j
+@Component
 public class SAXParserForProducts extends DefaultHandler {
     Product product;
     Accessory accessory;
-    Map<String, Product> products;
-    String prodcutXmlFileName;
+    static Map<String, Product> products = new HashMap<String, Product>();
+    @Value("${init.productXmlFileName}")
+    String productXmlFileName;
     String elementValueRead;
+    @Autowired
+    MySQLDataStoreUtilities mySQLDataStoreUtilities;
 
+    public void loadProductMap() {
+        products = mySQLDataStoreUtilities.getProductDetails();
 
-    public SAXParserForProducts(String prodcutXmlFileName) {
-        this.prodcutXmlFileName = prodcutXmlFileName;
-        products = new HashMap<>();
-        parseDocument();
+        if (products == null || products.size() == 0) {
+            parseDocument();
+            //log.info("products "+products);
+            if (products != null)
+                mySQLDataStoreUtilities.insertProducts(products);
+        }
+
     }
 
-    private void parseDocument() {
+    public void parseDocument() {
         SAXParserFactory factory = SAXParserFactory.newInstance();
         try {
+            log.info("Parsing products " + productXmlFileName + " ");
             SAXParser parser = factory.newSAXParser();
-            // String TOMCAT_HOME = System.getProperty("catalina.home");
-            parser.parse("/Users/smoganti/eclipse-workspace/A20392260_Eclipse/src/ProductCatalog.xml", this);
+            parser.parse(productXmlFileName, this);
         } catch (ParserConfigurationException e) {
-            System.out.println("ParserConfig error");
+            log.error("ParserConfig error");
         } catch (SAXException e) {
-            System.out.println("SAXException : xml not well formed");
+            log.error("SAXException : xml not well formed");
         } catch (IOException e) {
-            System.out.println("IO error");
+            e.printStackTrace();
+            log.error("IO error");
         }
     }
 
 
-    public Map<String, Product> getProducts() {
-
-        return products;
-    }
+//    public Map<String, Product> getProducts() {
+//
+//        return products;
+//    }
 
 
     @Override
