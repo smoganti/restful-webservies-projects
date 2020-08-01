@@ -20,7 +20,7 @@ public class MySQLDataStoreUtilities {
         int i = 1;
 
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
+            Class.forName("com.mysql.cj.jdbc.Driver").getDeclaredConstructor().newInstance();
 
             if (conn != null) {
                 log.info("getConnection :: Already Connected to the database!");
