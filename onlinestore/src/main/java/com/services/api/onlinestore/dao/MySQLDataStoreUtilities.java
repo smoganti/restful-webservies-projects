@@ -5,6 +5,8 @@ import com.services.api.onlinestore.model.Order;
 import com.services.api.onlinestore.model.Product;
 import com.services.api.onlinestore.model.User;
 import lombok.extern.slf4j.Slf4j;
+
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import java.sql.*;
@@ -16,16 +18,28 @@ public class MySQLDataStoreUtilities {
 
     public static Connection conn = null;
 
+    @Value("${spring.datasource.url}")
+    String dataSourceUrl;
+ 
+    @Value("${spring.datasource.username}")
+    String dataSourceUserName;
+
+    @Value("${spring.datasource.password}")
+    String dataSourcePassword;
+
+    @Value("${spring.datasource.driver-class-name}")
+    String dataSourceDriverName;
+
     public int getConnection() {
         int i = 1;
 
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver").getDeclaredConstructor().newInstance();
+            Class.forName(dataSourceDriverName).getDeclaredConstructor().newInstance();
 
             if (conn != null) {
                 log.info("getConnection :: Already Connected to the database!");
             } else {
-                conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/smartportables", "root", "root");
+                conn = DriverManager.getConnection(dataSourceUrl, dataSourceUserName, dataSourcePassword);
                 log.info("getConnection :: Connection established!");
             }
         } catch (SQLException e) {
